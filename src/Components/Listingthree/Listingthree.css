@@ -1,0 +1,241 @@
+:root {
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsla(217, 62%, 95%, 0.837);
+  --shadowColorTwo: hsla(242, 76%, 40%, 0.755);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+.btnn3 {
+  color: rgb(201, 150, 26);
+  background-color: white;
+  border: 2px solid rgb(201, 150, 26);
+  font-family: "Playfair Display", serif;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  font-size: medium;
+  height: 73.53px !important;
+  padding: 1.4rem !important;
+  font-weight: 550;
+}
+
+.Listingthree .secContainerthree .secHeader {
+  text-align: center;
+}
+
+.Listingthree .secContainerthree .secHeader .btns {
+  margin-top: 1.5rem;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure the buttons wrap on small screens */
+  display: flex; /* Use flexbox for layout */
+}
+
+.Listingthree .secContainerthree .secHeader .btns .btn {
+  border: 2px solid var(--primaryColorDark);
+  background: none;
+  color: var(--primaryColorDark);
+  font-weight: 500;
+}
+
+.Listingthree .secContainerthree .secHeader .btns .btn:hover {
+  background: var(--primaryColor);
+  border: 2px solid transparent;
+  color: var(--whiteColor);
+}
+
+.Listingthree .secContainerthree .secHeader .btns .active {
+  background: var(--primaryColor);
+  border: 2px solid transparent;
+  color: var(--whiteColor);
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  height: 400px; /* Set a fixed height */
+  border-radius: var(--borderRadius);
+  padding: 6px;
+  gap: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadowColor);
+}
+
+.singleListingthree .imgDiv {
+  flex-shrink: 0;
+}
+
+.singleListingthree .info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree:hover {
+  box-shadow: 0 4px 8px rgba(184, 134, 11, 0.5), 0 6px 20px rgba(139, 69, 19, 0.5), 0 8px 25px rgba(203, 109, 81, 0.5);
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree:hover .imgDiv img {
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv {
+  height: 200px;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info {
+  padding: 0.5rem 0.5rem 0;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .price {
+  font-size: var(--h3FontSize);
+  display: block;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .price .digits {
+  color: var(--primaryColorDark);
+  opacity: 0.7;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .price .duration {
+  font-weight: 500;
+  color: var(--primaryColorDark);
+  opacity: 0.7;
+  font-display: var(--normalFontSize);
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .name {
+  display: block;
+  font-size: var(--h2FontSize);
+  font-weight: 700;
+  border-bottom: 2px solid rgb(235, 238, 242); 
+  padding-bottom: 1rem;
+  color: var(--primaryColorDark);
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info p {
+  color: var(--primaryColorDark);
+  opacity: 0.7;
+  font-size: 0.9rem;
+  line-height: 20px;
+  padding-bottom: 1rem;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities {
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities .flex {
+  gap: 0.5rem;
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities .flex .icon {
+  color: var(--orangeColor);
+}
+
+.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities .flex blockquote {
+  color: var(--blackColor);
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+  .Listingthree .secContainerthree .secContentthree {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .Listingthree .secContainerthree .secContentthree {
+    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .Listingthree .secContainerthree .secContentthree .singleListingthree {
+    height: auto;
+    width: 100%; /* Let the height adjust automatically */
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv {
+    height: 150px; /* Reduce the image height */
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree .info p {
+    font-size: 0.8rem; /* Reduce the font size */
+    line-height: 1.2rem; /* Adjust the line height */
+  }
+}
+
+/* Specific adjustments for devices with max-width: 320px */
+@media screen and (max-width: 320px) {
+
+  .Listingthree{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .Listingthree .secContainerthree .secHeader .btns {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree {
+    height: auto;
+    width: 100%; /* Let the height adjust automatically */
+    padding: 4px;
+    gap: 0.3rem;
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv {
+    height: 120px; /* Further reduce the image height */
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree .info .name {
+    font-size: var(--h3FontSize);
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree .info p {
+    font-size: 0.7rem; /* Further reduce the font size */
+    line-height: 1rem; /* Adjust the line height */
+    padding-bottom: 0.5rem;
+  }
+
+  .Listingthree .secContainerthree .secContentthree .singleListingthree .info .price {
+    font-size: 0.8rem;
+  }
+}

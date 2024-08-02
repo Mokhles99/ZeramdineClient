@@ -1,0 +1,165 @@
+// Font style
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+
+
+:root {
+  // All project colors
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsl(219, 63%, 95%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  //   linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198))
+
+  //   All project font-sizes
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+.Contact {
+  .secContainer {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    gap: 2rem;
+
+    .textDiv {
+      .secTitle {
+        text-align: left;
+      }
+
+      .secContent {
+        gap: 1.5rem;
+        .phone, .videoCall, .chat, .message {
+          display: flex;
+          padding: 2rem;
+          border-radius: var(--borderRadius);
+          border: 2px solid var(--primaryColorLight);
+          flex-direction: column;
+          &:hover {
+            border: 2px solid transparent;
+            box-shadow: 0 2px 8px var(--shadowColor);
+            button {
+              color: var(--whiteColor);
+              background: var(--primaryColor);
+              color-interpolation-filters: var(--whiteColor);
+              box-shadow: 0 2px 8px var(--shadowColor);
+            }
+          }
+
+          .info {
+            gap: 0.8rem;
+            .icon {
+              color: var(--primaryColor);
+              font-size: var(--h1FontSize);
+              background: var(--primaryColorLight);
+              padding: 10px;
+              height: 40px;
+              width: 40px;
+              border-radius: var(--borderRadius);
+            }
+            h4 {
+              color: var(--primaryColorDark);
+            }
+          }
+
+          button {
+            margin-top: 1rem;
+            background: var(--primaryColorLight);
+            border: none;
+            outline: none;
+            padding: 1rem;
+            font-weight: 600;
+            color: var(--primaryColor);
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+
+        .active {
+          border: 2px solid transparent;
+          box-shadow: 0 2px 8px var(--shadowColor);
+          button {
+            color: var(--whiteColor);
+            background: var(--primaryColor);
+            color-interpolation-filters: var(--whiteColor);
+            box-shadow: 0 2px 8px var(--shadowColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries ==================>
+
+@media screen and (min-width: 480px){
+  .Contact{
+    .secContainer{
+      flex-direction: column;
+      flex-flow: column-reverse;
+      gap: 1.5rem;
+
+      .textDiv{
+        .secContent{
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .Contact{
+    .secContainer{
+      flex-direction: row;
+      flex-flow: row-reverse;
+      gap: 2rem;
+      align-items: flex-start;
+
+      .imgDiv{
+        flex-basis: 50%;
+      }
+
+      .textDiv{
+        flex-basis: 60%;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1400px){
+  .Contact{
+    .secContainer{
+      flex-direction: row;
+      flex-flow: row-reverse;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: space-around;
+
+      .imgDiv{
+        flex-basis: 37%;
+       
+      }
+
+      .textDiv{
+        flex-basis: 45%;
+      }
+    }
+  }
+}

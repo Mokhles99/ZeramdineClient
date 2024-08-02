@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsl(219, 63%, 95%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+.Subscribe .secContent {
+  background: linear-gradient(40deg, rgb(200, 200, 200), rgb(100, 100, 100));
+  padding: 2rem 1.5rem;
+  border-radius: var(--borderRadius);
+  text-align: center;
+  display: grid;
+  gap: 0.5rem;
+}
+.btnn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+  color: var(--whiteColor);
+  font-weight: 500;
+  
+    /* background: rgb(12,163,154); */
+}
+.Subscribe .secContent h1 {
+  /* /* color: var(--whiteColor); */
+  color: rgb(233 170 16);
+
+  font-size: var(--h1FontSize);
+}
+.Subscribe .secContent p {
+  color: var(--primaryColorLight);
+  font-size: var(--normalFontSize);
+  padding: 1rem;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+.Subscribe .secContent .btn {
+  background: rgb(114, 145, 255);
+  border: 2px solid var(--whiteColor);
+  font-weight: 600;
+  border-radius: var(--borderRadius);
+  max-width: 200px;
+  margin: auto;
+}
+.Subscribe .secContent .btn:hover {
+  background:rgb(201, 150, 26) !important;
+  color:azure !important;
+  border: 2px solid var(--whiteColor) !important;
+}
+
+@media screen and (min-width: 480px) {
+  .Subscribe .secContent {
+    padding: 4rem 1.5rem;
+  }
+  .Subscribe .secContent h1 {
+    font-size: var(--biggestFontSize);
+  }
+  .Subscribe .secContent p {
+    font-size: var(--h3FontSize);
+  }
+  .Subscribe .secContent .btn {
+    font-size: var(--h3FontSize);
+  }
+}/*# sourceMappingURL=Subscribe.css.map */
