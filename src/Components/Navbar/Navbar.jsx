@@ -90,6 +90,7 @@ const Navbar = () => {
                 border: '2px solid #C9961A' ,
                 fontFamily: "'Playfair Display', serif",// Border color
               }}
+              onClick={scrollToContact}
               >
                 Contact
               </button>

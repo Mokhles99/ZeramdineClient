@@ -34,7 +34,7 @@ const Contact = () => {
   }, []);
 
   const handleContactClick = () => {
-    window.location.href = 'https://www.facebook.com/cogebimmobiliere.com.tn/?locale=fr_FR';
+    window.location.href = 'https://www.facebook.com';
   };
 
   return (
