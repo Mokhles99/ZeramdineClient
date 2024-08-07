@@ -22,7 +22,7 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 10px;
 }
-
+/* correctif */
 .Navbar {
   display: flex;
   align-items: center;

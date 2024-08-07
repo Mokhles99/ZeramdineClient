@@ -25,22 +25,9 @@ import { GiKitchenTap } from "react-icons/gi";
 import { BiSolidBath } from "react-icons/bi";
 import { getAllProducts } from "../../actions/product.actions";
 
-// import image1 from "../../Assets/House (1).png";
-// import image1 from "../../Assets/doc2/IMGCOGEB1.jpg"
-import image1 from "../../Assets/bat25.jpg"
-// import image2 from "../../Assets/House (4).png";
-// import image2 from "../../Assets/doc3/IMG2.jpg";
-import image2 from "../../Assets/doc2/mok.jpg";
-// import image3 from "../../Assets/House (5).png";
-import image3 from "../../Assets/doc3/IMG3.jpg";
 
-// import image4 from "../../Assets/House (2).png";
-import image4 from "../../Assets/zit.jpg";
-// import image5 from "../../Assets/House (1).jpg";
-import image5 from "../../Assets/bat25.jpg";
-import image6 from "../../Assets/House (2).jpg";
 import mascotImage from '../../Assets/szqcat2.png'
-import image7 from "../../Assets/import.jpg"
+
 
 // import image11 from '../../Assets/sqz/peinture.jpg'
 // import image22 from '../../Assets/sqz/electrique.jpg'
