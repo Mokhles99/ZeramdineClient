@@ -82,7 +82,7 @@ const Navbar = () => {
      
        
        <CartIcon/>
-    
+  
       <button className="btnn" style={{
                 color: '#C9961A', // Text color
                 background:"rgb(205 198 198 / 36%)",
@@ -99,6 +99,7 @@ const Navbar = () => {
       {/* icon open/show navbar on small devices */}
       <PiDotsNineBold className="icon menuIcon" onClick={shownavbar} />
     </div>
+    ///commit correctif
   );
 };
 
