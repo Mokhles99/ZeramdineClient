@@ -5,7 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import Typography from '@mui/material/Typography';
-import cogeb from "../../Assets/NVLOGOCOGEB.png";
+
 
 export default function FormDialog({ open, onClose }) {
   const [formValues, setFormValues] = useState({
@@ -48,7 +48,7 @@ export default function FormDialog({ open, onClose }) {
     >
       <form onSubmit={handleSubmit}>
         <div style={{ textAlign: 'center', padding: '20px', color: '#fff' }}>
-          <img src={cogeb} alt="Silver Line Solution" style={{ width: '80px', height: 'auto', margin: '0 auto' }} />
+         
           {/* <Typography variant="h6" component="h2">
             Contactez-nous
           </Typography> */}
