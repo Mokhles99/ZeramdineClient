@@ -17,7 +17,7 @@ export const createProduct = (productData) => (dispatch) => {
     });
   }
 
-  fetch('http://5.196.6.177/product/create', {
+  fetch('https://admin.szq.tn/api/product/create', {
     method: 'POST',
     body: formData, // Pas besoin de définir 'Content-Type' pour FormData, le navigateur le fera
   })
@@ -36,7 +36,7 @@ export const createProduct = (productData) => (dispatch) => {
 // Récupérer tous les produits
 export const getAllProducts = () => (dispatch) => {
   dispatch({ type: productConstants.GET_ALL_PRODUCTS_REQUEST });
-  fetch('http://5.196.6.177/product/products')
+  fetch('https://admin.szq.tn/api/product/products')
     .then((response) => response.json())
     .then((data) => dispatch({
       type: productConstants.GET_ALL_PRODUCTS_SUCCESS,
@@ -52,7 +52,7 @@ export const getAllProducts = () => (dispatch) => {
 export const getProductById = (id) => async (dispatch) => {
     dispatch({ type: productConstants.GET_PRODUCT_REQUEST });
     try {
-      const response = await fetch(`http://5.196.6.177/product/products/${id}`);
+      const response = await fetch(`https://admin.szq.tn/api/product/products/${id}`);
       const data = await response.json();
       dispatch({
         type: productConstants.GET_PRODUCT_SUCCESS,
@@ -83,7 +83,7 @@ export const updateProduct = (id, productData) => (dispatch) => {
     });
   }
 
-  return fetch(`http://5.196.6.177/product/update/${id}`, {
+  return fetch(`https://admin.szq.tn/api/product/update/${id}`, {
     method: 'PUT',
     body: formData,
   })
@@ -117,7 +117,7 @@ export const updateProduct = (id, productData) => (dispatch) => {
 export const deleteProduct = (id) => (dispatch) => {
     dispatch({ type: productConstants.DELETE_PRODUCT_REQUEST });
 
-    fetch(`http://5.196.6.177/product/delete/${id}`, {
+    fetch(`https://admin.szq.tn/api/product/delete/${id}`, {
         method: 'DELETE',
     })
     .then(response => {
