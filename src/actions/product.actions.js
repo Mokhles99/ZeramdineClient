@@ -19,7 +19,7 @@ export const createProduct = (productData) => (dispatch) => {
 
   fetch('https://admin.szq.tn/api/product/create', {
     method: 'POST',
-    body: formData, // Pas besoin de définir 'Content-Type' pour FormData, le navigateur le fera
+    body: formData, //for commit mokhles
   })
   .then((response) => response.json())
   .then((data) => dispatch({
