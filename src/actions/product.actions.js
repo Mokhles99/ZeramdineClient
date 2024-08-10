@@ -4,7 +4,7 @@ import { productConstants } from './constantes';
 export const createProduct = (productData) => (dispatch) => {
   dispatch({ type: productConstants.CREATE_PRODUCT_REQUEST });
 
-  // Préparez le FormData
+  // Préparez le FormData  changement d'api
   const formData = new FormData();
   formData.append('name', productData.name);
   formData.append('description', productData.description);
