@@ -1,4 +1,3 @@
-
 import React, { useEffect, useContext, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Listingthree.css";
@@ -6,14 +5,12 @@ import CatalogContext from "../Listing/Catalogcontext";
 import { getAllProducts } from "../../actions/product.actions";
 import { addToCarttwo, getCarttwo } from '../../actions/carttwo.actions';
 import { MdOutlineShoppingCart } from "react-icons/md";
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import { FaSearch } from "react-icons/fa";
 import Pagination from '@mui/material/Pagination'; // Importer le composant Pagination de Material-UI
-import { RiShoppingBagLine } from "react-icons/ri";
 
 const manuel = ["Tournevis", "Marteaux", "Pinces", "Clés", "Scies", "Mesures"];
 const electriq = ["Interrupteurs", "Prises de courant", "Câbles électriques", "Lampes et luminaires", "Disjoncteur", "Boîtes de jonction"];
@@ -37,19 +34,49 @@ const catalogData = {
   construction
 };
 
-const modalStyle = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '80%',
-  maxWidth: '600px',
-  bgcolor: '#122023',
-  color: 'rgb(201, 150, 26)',
-  borderRadius: '10px',
-  boxShadow: 24,
-  p: 4,
-  textAlign: 'center',
+const getModalStyle = () => {
+  const baseStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: '#122023',
+    color: '#FFFFFF',
+    borderRadius: '10px',
+    boxShadow: 24,
+    p: 4,
+    textAlign: 'center',
+  };
+
+  const titleStyle = {
+    color: 'gold',
+    fontWeight: 'bold',
+  };
+
+  const width = window.innerWidth;
+
+  if (width < 425) {
+    return {
+      ...baseStyle,
+      width: '90%',
+      flexDirection: 'column', // Stack image and text vertically
+      titleStyle: { ...titleStyle, fontSize: '1rem' },
+    };
+  } else if (width <= 425) {
+    return {
+      ...baseStyle,
+      width: '85%',
+      flexDirection: 'column', // Stack image and text vertically
+      titleStyle: { ...titleStyle, fontSize: '1.1rem' },
+    };
+  } else {
+    return {
+      ...baseStyle,
+      width: '40%',
+      flexDirection: 'row', // Place image and text side by side
+      titleStyle: { ...titleStyle, fontSize: '1.3rem' },
+    };
+  }
 };
 
 const Listingthree = () => {
@@ -136,7 +163,6 @@ const Listingthree = () => {
     setCurrentPage(value);
   };
 
-
   const truncateDescription = (description) => {
     const maxLength = 120;
     if (description.length > maxLength) {
@@ -149,10 +175,13 @@ const Listingthree = () => {
     }
     return description;
   };
-  // Calculer les produits à afficher en fonction de la page actuelle
+
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  const modalStyle = getModalStyle();
+  const { titleStyle, flexDirection } = modalStyle;
 
   return (
     <div className="Listingthree containerNew" id="listing-three">
@@ -174,7 +203,7 @@ const Listingthree = () => {
             <span className="orangeDot"> .</span>
           </h1>
           <p data-aos="fade-up" style={{marginBottom:'4rem', marginTop:'2rem'}}>
-            Découvrez nos produits exclusifs qui dépassent les frontières de l'excellence pour satisfaire vos exigences .
+            Découvrez nos produits exclusifs qui dépassent les frontières de l'excellence pour satisfaire vos exigences.
           </p>
 
           {catalogName && (
@@ -241,30 +270,25 @@ const Listingthree = () => {
               <div data-aos="fade-up" className="info">
                 <h2 className="name">{product.name}</h2>
                 <p>{truncateDescription(product.description)}</p>
-                
               </div>
-
               <button
-                  className="plusButton"
-                  onClick={() => handleAddToCart(product._id)}
-                  style={{
-                    color: '#C9961A', // Text color
-                    background:"rgb(205 198 198 / 56%)",
-                    // background:"rgb(30, 63, 113)",
-                    // Button background color
-                    border: '1px solid #C9961A' ,borderRadius:'15px',
-                    width:'45%',
-                    fontFamily: "'Playfair Display', serif",
-                    alignItems:'center', 
-                   marginBottom:'1rem',
-                   padding:'0.3rem',
-                    cursor:'pointer'
-                     // Border color
-                  }}
-                >
-                Ajouter au <MdOutlineShoppingCart/>
- </button>
-             
+                className="plusButton"
+                onClick={() => handleAddToCart(product._id)}
+                style={{
+                  color: '#C9961A',
+                  background: "rgb(205 198 198 / 56%)",
+                  border: '1px solid #C9961A', 
+                  borderRadius: '15px',
+                  width: '45%',
+                  fontFamily: "'Playfair Display', serif",
+                  alignItems: 'center', 
+                  marginBottom: '1rem',
+                  padding: '0.3rem',
+                  cursor: 'pointer'
+                }}
+              >
+                Ajouter au <MdOutlineShoppingCart />
+              </button>
             </div>
           ))}
         </div>
@@ -282,39 +306,33 @@ const Listingthree = () => {
       </div>
 
       <Modal
-  open={open}
-  onClose={handleClose}
-  aria-labelledby="modal-modal-title"
-  aria-describedby="modal-modal-description"
->
-  <Box sx={modalStyle}>
-    {selectedProduct && (
-      <>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img
-            src={selectedProduct.files[0]?.url}
-            alt={selectedProduct.name}
-            style={{ width: '40%', marginRight: '20px', borderRadius: '30px' }}
-          />
-          <div style={{ textAlign: 'left' }}>
-            <h2 id="modal-modal-title">
-              <span style={{ color: 'gold', fontWeight: 'bold' }}>Produit:</span>
-              <span style={{ color: 'silver' }}>{selectedProduct.name}</span>
-            </h2>
-            <p id="modal-modal-description" style={{ color: 'silver', textAlign: 'justify' }}>
-              <span style={{ color: 'gold', fontWeight: 'bold' }}>Détails:</span>
-              <span>{selectedProduct.description}</span>
-
-            </p>
-        
-            {/* <p id="modal-modal-price" style={{ color: 'silver', textAlign: 'justify' }}>{selectedProduct.price} REF</p> */}
-          </div>
-        </div>
-      </>
-    )}
-  </Box>
-</Modal>
-
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={{ ...modalStyle, display: 'flex', flexDirection }}>
+          {selectedProduct && (
+            <>
+              <div style={{ display: 'flex', alignItems: 'center', flexDirection: flexDirection }}>
+                <img
+                  src={selectedProduct.files[0]?.url}
+                  alt={selectedProduct.name}
+                  style={{ width: flexDirection === 'column' ? '100%' : '40%', marginRight: flexDirection === 'column' ? '0' : '20px', borderRadius: '30px' }}
+                />
+                <div style={{ textAlign: flexDirection === 'column' ? 'center' : 'left', marginTop: flexDirection === 'column' ? '20px' : '0' }}>
+                  <h2 id="modal-modal-title" style={titleStyle}>
+                    Produit: <span style={{ color: 'white' }}>{selectedProduct.name}</span>
+                  </h2>
+                  <p id="modal-modal-description" style={{ color: 'white', textAlign: 'justify' }}>
+                    Détails: <span>{selectedProduct.description}</span>
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
+        </Box>
+      </Modal>
     </div>
   );
 };

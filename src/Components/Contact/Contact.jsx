@@ -42,7 +42,7 @@ const Contact = () => {
       <div className="secContainer flex">
       <div className="card">
           <h2 className="card-title">Où nous trouver ?</h2>
-          <p className="card-subtitle">COGEB toujours à votre service</p>
+          <p className="card-subtitle">SZQ toujours à votre service</p>
           <div className="map-container">
             <LeafletMap />
           </div>

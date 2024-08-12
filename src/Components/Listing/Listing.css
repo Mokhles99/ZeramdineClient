@@ -218,6 +218,43 @@
   color:rgb(30, 63, 113) !important;
 }
 
+@media screen and (max-width:425px){
+  .mascotContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem; /* Ajustez cette valeur si nécessaire */
+}
+
+.mascotImage {
+  max-width: 400px ;
+  height: 400px;
+}
+}
+
+
+
+@media screen and (max-width:375px){ 
+  .image-container {
+    position: relative;
+    width: 280px !important;
+    height: 370px !important;
+    overflow: hidden;
+    cursor:pointer;
+    border-radius: 20px;
+    /* filter: sepia(30%); */
+    box-shadow: 0 16px 20px rgba(184, 134, 11, 0.5),
+    0 6px 20px rgba(139, 69, 19, 0.5), 
+    0 8px 25px rgba(203, 109, 81, 0.5); 
+  }
+  
+  .image-container.selected {
+    box-shadow: none;
+  }
+  
+  
+}
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .Listing .secContainer .secContent {
     grid-template-columns: repeat(2, 1fr);

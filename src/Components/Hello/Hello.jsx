@@ -63,8 +63,8 @@ const HeroSection = () => {
     <div className="hero-section" id="hero">
       <div className="hero-container containerHR flex">
         <div className="hero-text">
-          <h1 data-aos="fade-up">
-            <span style={{ fontFamily: "'Playfair Display', serif", fontSize:"4rem" }}>{text}</span>
+          <h1 data-aos="fade-up" className="curr">
+            <span style={{ fontFamily: "'Playfair Display', serif" }}>{text}</span>
             <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="orange" />
           </h1>
           <span data-aos="fade-up" className="design"></span>
@@ -76,7 +76,7 @@ const HeroSection = () => {
               <span style={{ marginRight: '2rem' }}>
                 <AnimatedCounter end={110} duration={4.5} /> <blockquote>+</blockquote>
               </span>
-              <small>Marques</small>
+              <small >Marques</small>
             </div>
             <div className="number-item">
             <span style={{ marginRight: '2rem' }}>

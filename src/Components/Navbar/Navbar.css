@@ -171,3 +171,47 @@
     font-size: var(--h1FontSize);
   }
 }/*# sourceMappingURL=Navbar.css.map */
+
+@media screen and (max-width: 425px) {
+  .Navbar .logoDiv .logonav{
+    width: 80% !important;
+    height:35px !important;
+  }
+
+  .btnn{
+    width: 70px !important;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Navbar .logoDiv .logonav{
+    width: 80% !important;
+    height:35px !important;
+  
+  }
+
+  .btnn{
+    width: 60px !important;
+    font-size: 0.5rem;
+  }
+
+  .Navbar{
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .Navbar .logoDiv .logonav{
+    width: 80% !important;
+    height:30px !important;
+  
+  }
+
+  .btnn{
+    width: 60px!important;
+    font-size: 0.5rem;
+  }
+}

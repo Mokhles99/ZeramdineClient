@@ -7,8 +7,6 @@
     z-index: 1000; /* Assurez-vous qu'elle reste visible au-dessus des autres contenus */
     background-color:#b2bab9;
 
-  
-  
    /* Fond semi-transparent pour la visibilité */
     padding: 8px;
     border-radius: 50%; /* Style circulaire pour l'icône */
@@ -28,6 +26,7 @@
     right: 500px !important;
 }
 }
+
 
 
 

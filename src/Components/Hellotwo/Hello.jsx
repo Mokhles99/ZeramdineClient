@@ -121,7 +121,7 @@ const HelloTwo = () => {
         <div className="textDiv">
           <h1 data-aos="fade-up"> <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "3.5rem" }}>Pourquoi nous choisir ?</span></h1>
           <span data-aos="fade-up" className="design"></span>
-          <p data-aos="fade-up" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.8rem" }}>
+          <p data-aos="fade-up" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.9rem" }}>
             Depuis <span style={{ color: 'rgb(201, 150, 26)', fontWeight: 'bold' }}>1986</span>, nous nous engageons à fournir à notre communauté les outils et les
             fournitures dont elle a besoin pour réaliser ses projets, grands ou petits. Notre
             histoire commence il y a plus de trois décennies, lorsque <span style={{ color: 'rgb(201, 150, 26)', fontWeight: 'bold' }}>LHAJ KHEMAÏES</span> a ouvert
@@ -133,29 +133,29 @@ const HelloTwo = () => {
             mener à bien vos projets ... <span style={{ color: "rgb(201, 150, 26)", textDecoration: "underline", cursor: 'pointer' }} onClick={handleOpenModal} >VOIR PLUS</span>
           </p>
 
-          <div data-aos="fade-up" className="statisticsBar" style={styles.container}>
-            <div style={styles.mainTitle}>Découvrez notre histoire . </div>
+          <div data-aos="fade-up" className="statistics-bar-container">
+            <div className="statistics-bar-title">Découvrez notre histoire . </div>
           
-            <div style={styles.statsContainer}>
-              <div style={styles.statItem}>
-                <div style={styles.statValue}>30 ANS +</div>
-                <div style={styles.statLabel}>Expérience</div>
+            <div className="statistics-bar-stats">
+              <div className="statistics-bar-item">
+                <div className="statistics-bar-value">30 ANS +</div>
+                <div className="statistics-bar-label">Expérience</div>
               </div>
-              <div style={styles.statItem}>
-                <div style={styles.statValue}>1986</div>
-                <div style={styles.statLabel}>Depuis</div>
+              <div className="statistics-bar-item">
+                <div className="statistics-bar-value">1986</div>
+                <div className="statistics-bar-label">Depuis</div>
               </div>
-              <div style={styles.statItem}>
-                <div style={styles.statValue}>2000 +</div>
-                <div style={styles.statLabel}>Clients</div>
+              <div className="statistics-bar-item">
+                <div className="statistics-bar-value">2000 +</div>
+                <div className="statistics-bar-label">Clients</div>
               </div>
-              <div style={styles.statItem}>
-                <div style={styles.statValue}>3500 +</div>
-                <div style={styles.statLabel}>Produit</div>
+              <div className="statistics-bar-item">
+                <div className="statistics-bar-value">3500 +</div>
+                <div className="statistics-bar-label">Produit</div>
               </div>
-              <div style={styles.statItem}>
-                <div style={styles.statValue}>200 +</div>
-                <div style={styles.statLabel}>Projet</div>
+              <div className="statistics-bar-item">
+                <div className="statistics-bar-value">200 +</div>
+                <div className="statistics-bar-label">Projet</div>
               </div>
             </div>
           </div>
