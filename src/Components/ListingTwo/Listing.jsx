@@ -31,12 +31,7 @@ import image2 from "../../Assets/iconszq1.webp";
 import image3 from "../../Assets/iconszq2.webp";
 
 // import image4 from "../../Assets/House (2).png";
-import image4 from "../../Assets/zit.jpg";
-// import image5 from "../../Assets/House (1).jpg";
-import image5 from "../../Assets/bat25.jpg";
-import image6 from "../../Assets/House (2).jpg";
 
-import image7 from "../../Assets/import.jpg"
 
 import Aos from "aos";
 import "aos/dist/aos.css";

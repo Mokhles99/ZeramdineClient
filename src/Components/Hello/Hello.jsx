@@ -73,19 +73,19 @@ const HeroSection = () => {
           </p>
           <div data-aos="fade-up" className="hero-numbers flex">
             <div className="number-item">
-              <span style={{ marginRight: '2rem' }}>
+              <span>
                 <AnimatedCounter end={110} duration={4.5} /> <blockquote>+</blockquote>
               </span>
               <small >Marques</small>
             </div>
             <div className="number-item">
-            <span style={{ marginRight: '2rem' }}>
+            <span >
                 <AnimatedCounter end={2} duration={4.5} /> <blockquote>K+</blockquote>
               </span>
               <small>Clients Heureux</small>
             </div>
             <div className="number-item">
-            <span style={{ marginRight: '2rem' }}>
+            <span >
                 <AnimatedCounter end={1986} duration={5.5} /> <blockquote>+</blockquote>
               </span>
               <small>Notre histoire</small>

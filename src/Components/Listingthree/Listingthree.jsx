@@ -52,29 +52,36 @@ const getModalStyle = () => {
     color: 'gold',
     fontWeight: 'bold',
   };
+  const textStyle = {
+    color: 'white',
+    textAlign: 'justify',
+  };
 
   const width = window.innerWidth;
 
-  if (width < 425) {
+  if (width < 580) {
     return {
       ...baseStyle,
-      width: '90%',
+      width: '80%',
       flexDirection: 'column', // Stack image and text vertically
-      titleStyle: { ...titleStyle, fontSize: '1rem' },
+      titleStyle: { ...titleStyle, fontSize: '0.7rem' },
+      textStyle: { ...textStyle, fontSize: '0.8rem' },
     };
-  } else if (width <= 425) {
+  }
+  //  else if (width >= 426) {
+  //   return {
+  //     ...baseStyle,
+  //     width: '85%',
+  //     flexDirection: 'column', // Stack image and text vertically
+  //     titleStyle: { ...titleStyle, fontSize: '1.1rem' },
+  //   };
+  // }
+   else {
     return {
       ...baseStyle,
-      width: '85%',
-      flexDirection: 'column', // Stack image and text vertically
-      titleStyle: { ...titleStyle, fontSize: '1.1rem' },
-    };
-  } else {
-    return {
-      ...baseStyle,
-      width: '40%',
+      width: '70%',
       flexDirection: 'row', // Place image and text side by side
-      titleStyle: { ...titleStyle, fontSize: '1.3rem' },
+      titleStyle: { ...titleStyle, fontSize: '0.9rem' },
     };
   }
 };
@@ -181,7 +188,7 @@ const Listingthree = () => {
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
   const modalStyle = getModalStyle();
-  const { titleStyle, flexDirection } = modalStyle;
+  const { titleStyle, flexDirection ,textStyle } = modalStyle;
 
   return (
     <div className="Listingthree containerNew" id="listing-three">
@@ -207,10 +214,10 @@ const Listingthree = () => {
           </p>
 
           {catalogName && (
-            <div data-aos="fade-up" style={{ display: 'flex', alignItems: 'center', marginLeft:'9rem', marginBottom: '1rem', color: '#1e3f71', fontWeight: 'bold', fontSize: '1.2rem' }}>
-              <span>{catalogName}</span>
-              <span style={{ marginLeft: '0.5rem', fontSize: '1.5rem' }}>⬇️</span>
-            </div>
+         <div data-aos="fade-up" class="catalog-container">
+         <span>{catalogName}</span>
+         <span class="catalog-icon">⬇️</span>
+       </div>
           )}
           <div data-aos="fade-up" className="btns flex">
             {catalogData[catalog].map((name, index) => (
@@ -240,7 +247,7 @@ const Listingthree = () => {
                   value={searchQuery}
                   onChange={handleSearchChange}
                   placeholder="Chercher par nom"
-                  style={{ padding: '10px', width: '300px', borderRadius: '5px', border: '1px solid #C9961A' }}
+                  style={{ padding: '10px', width: '258px', borderRadius: '5px', border: '1px solid #C9961A' }}
                 />
                 {suggestions.length > 0 && (
                   <div style={{ position: 'absolute', top: '40px', width: '100%', background: 'white', borderRadius: '5px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
@@ -318,13 +325,13 @@ const Listingthree = () => {
                 <img
                   src={selectedProduct.files[0]?.url}
                   alt={selectedProduct.name}
-                  style={{ width: flexDirection === 'column' ? '100%' : '40%', marginRight: flexDirection === 'column' ? '0' : '20px', borderRadius: '30px' }}
+                  style={{ width: flexDirection === 'column' ? '50%' : '30%', marginRight: flexDirection === 'column' ? '0' : '20px', borderRadius: '30px' }}
                 />
                 <div style={{ textAlign: flexDirection === 'column' ? 'center' : 'left', marginTop: flexDirection === 'column' ? '20px' : '0' }}>
                   <h2 id="modal-modal-title" style={titleStyle}>
                     Produit: <span style={{ color: 'white' }}>{selectedProduct.name}</span>
                   </h2>
-                  <p id="modal-modal-description" style={{ color: 'white', textAlign: 'justify' }}>
+                  <p id="modal-modal-description" style={{textStyle,color:'white'}}>
                     Détails: <span>{selectedProduct.description}</span>
                   </p>
                 </div>

@@ -170,7 +170,37 @@
   opacity: 0.6;
   font-weight: 500;
 }
+
+.catalog-container {
+  display: flex;
+  align-items: center;
+  margin-left: 9rem;
+  margin-bottom: 1rem;
+  color: #1e3f71;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.catalog-icon {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
 @media screen and (max-width:425px) {
+  .Listingthree{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .catalog-container {
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    transform: translateX(-50%) !important;
+    color: #1e3f71;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  
 .secContentthree{
   gap: 2rem;
 }
@@ -189,7 +219,10 @@
   font-weight: 350;
 }
   
-  
+.Listingthree .secContainerthree .secHeader .btns {
+  flex-direction: row;
+  gap:0.2rem !important;
+}
 }
 @media screen and (min-width: 480px) and  (max-width: 677px){
   .Listingthree .secContainerthree .secContentthree {
@@ -206,8 +239,8 @@
 }
 @media screen and (min-width: 1100px) {
   .Listingthree .secContainerthree .secContentthree {
-    gap: 3rem;
-    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -227,7 +260,24 @@
     line-height: 1.2rem; /* Adjust the line height */
   }
 }
+@media screen and (max-width: 375px) {
+  
+  .Listingthree{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .catalog-container {
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    transform: translateX(-40%) !important;
+    color: #1e3f71;
+    font-weight: bold;
+    font-size: 1rem;
+  }
 
+  
+}
 /* Specific adjustments for devices with max-width: 320px */
 @media screen and (max-width: 320px) {
 
@@ -236,8 +286,8 @@
     padding-right: 1rem !important;
   }
   .Listingthree .secContainerthree .secHeader .btns {
-    flex-direction: column;
-    gap:0 !important;
+    flex-direction: row;
+    gap:0.2rem !important;
   }
 
   .Listingthree .secContainerthree .secContentthree .singleListingthree {
