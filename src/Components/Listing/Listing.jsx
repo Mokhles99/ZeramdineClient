@@ -223,7 +223,7 @@ const Listing = () => {
 
   useEffect(() => {
     dispatch(getAllProducts());
-    console.log('Produits chargés:', mokles);
+    // console.log('Produits chargés:', mokles);
   }, [dispatch]);
 
 
@@ -281,7 +281,7 @@ const Listing = () => {
               textTransform: 'uppercase', 
             }}>EXPLOREZ NOS CATÉGORIES</h1>
           <h1 data-aos="fade-up" className="title" style={{letterSpacing: '0.2em',}}>
-          Engagez-vous vers l'excellence avec SZQ  hello
+          Engagez-vous vers l'excellence avec SZQ 
             <span className="orangeDot"> .</span>
           </h1>
           <p data-aos="fade-up" style={{fontFamily: "'Playfair Display', serif",marginBottom:'3rem'}}>
