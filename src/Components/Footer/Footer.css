@@ -28,6 +28,11 @@
   padding: 2rem 0;
   border-radius: 15%;
 }
+
+.Footer div {
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
 .Footer .secContainer {
   gap: 1.5rem;
   text-align: center;

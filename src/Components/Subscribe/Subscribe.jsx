@@ -14,18 +14,16 @@ const Subscribe = () => {
     Aos.init({ duration: 2000 });
   }, []);
   
-  const handleContactClick = () => {
-    window.location.href = 'https://www.instagram.com/cogeb_immobiliere?igsh=amdkdGloNG11bWt4';
-  };
+
 
   return (
     <div className="Subscribe section container">
       <div className="secContent">
-        <h1 data-aos="fade-up">Client SZQ .</h1>
-        <p data-aos="fade-up">
+        <h1 >Client SZQ .</h1>
+        <p >
           Abonnez-vous et trouvez des offres de prix super attractives de notre part. Trouvez ce que vous désirez bientôt !
         </p>
-        <button data-aos="fade-up" className="btn" 
+        <button  className="btn" 
        style={{
         color: '#C9961A', // Text color
         backgroundColor: '#cdc8c8', // Button background color

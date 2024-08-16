@@ -46,6 +46,7 @@
 
 .Listing .secContainer .secHeader {
   text-align: center;
+  padding: 20px !important;
 }
 
 .btnn {
@@ -56,10 +57,15 @@
   padding: 0.8rem 1.2rem;
   color: var(--whiteColor);
   font-weight: 500;
-  
+ 
     /* background: rgb(12,163,154); */
 }
-
+.font-25{
+  font-size: 18px !important;
+}
+.min-width-221 {
+  min-width: 221px;
+}
 .Listing .secContainer .secHeader .btns {
   margin-top: 1.5rem;
   gap: 1rem;
@@ -83,8 +89,8 @@
 }
 .Listing .secContainer .secContent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2,  1fr);
+  gap: 35px;
   justify-items: center;
 }
 
@@ -165,7 +171,7 @@
 .image-container {
   position: relative;
   width: 320px;
-  height: 470px;
+  height: 350px;
   overflow: hidden;
   cursor:pointer;
   border-radius: 20px;
@@ -232,13 +238,15 @@
 }
 }
 
+.font-18{
+  font-size: 18px !important;
+}
 
-
-@media screen and (max-width:375px){ 
+@media screen and (max-width:500px){ 
   .image-container {
     position: relative;
-    width: 280px !important;
-    height: 370px !important;
+    width: 100% !important;
+    height: 263px  !important;
     overflow: hidden;
     cursor:pointer;
     border-radius: 20px;
@@ -256,10 +264,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .Listing .secContainer .secContent {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
+
   .image-container {
     width: 200px !important;
     height: 300px !important;
@@ -272,13 +277,24 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .Listing .secContainer .secContent {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px;
   }
+} 
+@media screen and (max-width: 450px ) {
+  .Listing .secContainer .secContent {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
+  
+  
 }
 
 @media screen and (min-width: 1100px) {
   .Listing .secContainer .secContent {
-    gap: 3rem;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.Listing{
+  width: 100% ;
 }

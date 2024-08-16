@@ -18,12 +18,12 @@ import image11 from '../../Assets/dossierproj/11.jpg';
 import image12 from '../../Assets/dossierproj/12.jpg';
 
 const images = [
-  image1,
-  image2,
+  // image1,
+  // image2,
   image3,
   image4,
   image5,
-  image6,
+  // image6,
   image7,
   image8,
   image9,

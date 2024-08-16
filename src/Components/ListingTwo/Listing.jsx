@@ -21,13 +21,11 @@ import { GiFamilyHouse } from "react-icons/gi";
 import { BiSolidBuildingHouse } from "react-icons/bi"
 import { GiKitchenTap } from "react-icons/gi";
 import { BiSolidBath } from "react-icons/bi";
-// import image1 from "../../Assets/House (1).png";
-// import image1 from "../../Assets/doc2/IMGCOGEB1.jpg"
+
 import image1 from "../../Assets/iconszq.webp"
-// import image2 from "../../Assets/House (4).png";
-// import image2 from "../../Assets/doc3/IMG2.jpg";
+
 import image2 from "../../Assets/iconszq1.webp";
-// import image3 from "../../Assets/House (5).png";
+
 import image3 from "../../Assets/iconszq2.webp";
 
 // import image4 from "../../Assets/House (2).png";
@@ -73,19 +71,7 @@ const ListingTwo = () => {
     <div className="ListingHR container section" id="group">
       <div className="secContainer">
         <div className="secHeader">
-          {/* <span data-aos="fade-up" className="orangeText">
-            Nos Sites
-          </span>
-          <h1 data-aos="fade-up" className="title">
-          Engagez-vous vers l'Excellence avec le Groupe COGEB
-            <span className="orangeDot"> .</span>
-          </h1>
-          <p data-aos="fade-up">
-            Satisfaire nos clients , Dépassez vos frontières .
-          </p>
-          <div data-aos="fade-up" className="btns flex">
-            <button className="btn active">Groupe Exclusif</button>
-          </div> */}
+      
         </div>
 
         <div className="secContentHR grid">

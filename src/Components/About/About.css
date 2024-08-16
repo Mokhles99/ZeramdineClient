@@ -22,7 +22,9 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 10px;
 }
-
+.About{
+  overflow-y: hidden;
+}
 .About .secContainer {
   flex-direction: column;
   flex-flow: column-reverse;
@@ -104,7 +106,7 @@
     padding: 1.5rem 1rem;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1400px) {
   .About .secContainer {
     flex-direction: column;
     gap: 2rem;

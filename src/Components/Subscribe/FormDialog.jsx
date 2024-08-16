@@ -5,7 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import Typography from '@mui/material/Typography';
-
+import "./Subscribe.css";
 
 export default function FormDialog({ open, onClose }) {
   const [formValues, setFormValues] = useState({
@@ -96,15 +96,12 @@ export default function FormDialog({ open, onClose }) {
           <Button 
             type="submit"
             style={{
-                border: 'none',
-                outline: 'none',
-                cursor: 'pointer',
-                borderRadius: '5px',
-                padding: '0.8rem 1.2rem',
-                color: 'var(--whiteColor)',
-                fontWeight: 500,
-                background: 'linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198))'
+              color: '#C9961A',
+              background: 'rgba(205, 198, 198, 0.36)',
+              border: '2px solid #C9961A',
+              fontFamily: "'Playfair Display', serif"
             }}
+             
           >
             Envoyer
           </Button>

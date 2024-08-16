@@ -45,7 +45,9 @@
   border: 2px solid var(--primaryColorLight);
   flex-direction: column;
 }
-
+.Contact{
+  overflow-y: hidden;
+}
 .Contact .secContainer .textDiv .secContent .phone:hover, .Contact .secContainer .textDiv .secContent .videoCall:hover, .Contact .secContainer .textDiv .secContent .chat:hover, .Contact .secContainer .textDiv .secContent .message:hover {
   border: 2px solid transparent;
   box-shadow: 0 2px 8px var(--shadowColor);

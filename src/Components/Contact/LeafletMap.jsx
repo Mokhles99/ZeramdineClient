@@ -28,7 +28,7 @@ const LeafletMap = () => {
       />
       <Marker position={center}>
         <Popup>
-          COGEB Immobilière.
+          Société Zéramdine de Quincaillerie
         </Popup>
       </Marker>
     </MapContainer>

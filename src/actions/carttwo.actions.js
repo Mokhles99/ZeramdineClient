@@ -14,7 +14,7 @@ export const createNewCart = () => {
 export const addToCarttwo = (cartId, productId, quantity = 1) => async (dispatch) => {
     dispatch({ type: carttwoConstants.ADD_TO_CARTTWO_REQUEST });
 
-    console.log(`Adding to cart - Cart ID: ${cartId}, Product ID: ${productId}, Quantity: ${quantity}`);
+    // console.log(`Adding to cart - Cart ID: ${cartId}, Product ID: ${productId}, Quantity: ${quantity}`);
 
     if (typeof productId !== 'string' || productId.length !== 24) {
         console.error("Invalid product ID format.");
@@ -36,7 +36,7 @@ export const addToCarttwo = (cartId, productId, quantity = 1) => async (dispatch
         }
 
         const data = await response.json();
-        console.log("Product added successfully:", data);
+        // console.log("Product added successfully:", data);
         dispatch({ type: carttwoConstants.ADD_TO_CARTTWO_SUCCESS, payload: data });
     } catch (error) {
         console.error("Error in addToCarttwo:", error);
@@ -100,7 +100,7 @@ export const removeItemFromCart = (cartId, itemId) => async (dispatch) => {
         }
         const data = await response.json();
         dispatch({ type: carttwoConstants.REMOVE_ITEM_FROM_CART_SUCCESS, payload: data });
-        console.log("Item removed successfully:", data);
+        // console.log("Item removed successfully:", data);
     } catch (error) {
         console.error("Error in removing item from cart:", error);
         dispatch({ type: carttwoConstants.REMOVE_ITEM_FROM_CART_FAILURE, payload: error.message });
@@ -109,10 +109,10 @@ export const removeItemFromCart = (cartId, itemId) => async (dispatch) => {
 
 export const updateItemQuantity = (cartId, itemId, quantity) => async (dispatch) => {
     dispatch({ type: carttwoConstants.UPDATE_ITEM_QUANTITY_REQUEST });
-    console.log(`Request to update quantity: ${quantity} for item: ${itemId} in cart: ${cartId}`);
+    // console.log(`Request to update quantity: ${quantity} for item: ${itemId} in cart: ${cartId}`);
 
     if (typeof quantity !== 'number' || quantity < 1) {
-        console.log("Invalid quantity provided:", quantity);
+        // console.log("Invalid quantity provided:", quantity);
         dispatch({
             type: carttwoConstants.UPDATE_ITEM_QUANTITY_FAILURE,
             payload: "Invalid quantity. Quantity must be a positive number."
@@ -129,12 +129,12 @@ export const updateItemQuantity = (cartId, itemId, quantity) => async (dispatch)
 
         if (!response.ok) {
             const errorData = await response.json();
-            console.log(`Error updating item quantity:`, errorData.message);
+            // console.log(`Error updating item quantity:`, errorData.message);
             throw new Error(`Failed to update item quantity: ${errorData.message}`);
         }
 
         const updatedCart = await response.json();
-        console.log("Updated cart after quantity change:", updatedCart);
+        // console.log("Updated cart after quantity change:", updatedCart);
         dispatch({ type: carttwoConstants.UPDATE_ITEM_QUANTITY_SUCCESS, payload: updatedCart });
     } catch (error) {
         console.error("Error in updateItemQuantity:", error);

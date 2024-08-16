@@ -54,67 +54,6 @@ import image99 from '../../Assets/pc/secur.png'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// const properties = [
-//   {
-//     id: 1,
-//     image: image1,
-//     name: "COGEB, IMMOBILIERE",
-//     price: "24/24",
-//     desc: "Une entreprise spécialisée dans la vente de produits sanitaires",
-//     beds: 6,
-//     icons: [< FaTreeCity className="icon" />, <GiWoodPile className="icon"/>, < GiWoodenPier className="icon" /> ,<FaIndustry className="icon" />]
-//   },
-//   {
-//     id: 2,
-//     image: image2,
-//     name: "COGEB",
-//     price: "24/24",
-//     desc: "Une entreprise spécialisée dans la vente de produits sanitaires",
-//     beds: 4,
-
-
-
- 
-//     icons: [   <FaBath className="icon" />, <MdTableRestaurant className="icon" />  ,<FaSink className="icon"/> ,<FaToilet className="icon"/> ]
-                    
-//   },
-//   {
-//     id: 3,
-//     image: image3,
-//     name: "COGEB, SOPRODI",
-//     price: "24/24",
-//     desc: "Une entreprise spécialisée dans la vente de produits sanitaires",
-//     beds: 5,
-//     icons:[ <GiKitchenTap className="icon"/>,  <BiSolidBath className="icon"/>,]
-
-//   },
-//   {
-//     id: 4,
-//     image: image4,
-//     name: "COGEB, EL BARAKA",
-//     price: "24/24",
-//     desc: "Une entreprise spécialisée dans la vente de produits sanitaires",
-//     beds: 7,
-//     icons: [<GiSpiralBottle className="icon" />,  <GiOlive className="icon" />, <FaBottleDroplet className="icon" />, <GiFruitTree className="icon" />]
-//   },
-//   {
-//     id: 5,
-//     image: image7,
-//     name: "COGEB, INTERNATIONAL",
-//     price: "24/24",
-//     desc: "Une entreprise spécialisée dans la vente de produits sanitaires",
-//     beds: 8,
-//     icons:[ <FaBuildingColumns className="icon"/>, <FaBuilding className="icon"/>,<GiFamilyHouse  className="icon"/>,<BiSolidBuildingHouse className="icon"/>]
-//   },
-//   {
-//     id: 6,
-//     image: image6,
-//     name: "COGEB , Tunisie",
-//     price: "24/24",
-//     desc: "Une entreprise spécialisée dans la vente de produits sanitaires",
-//     beds: 6,
-//   },
-// ];
 
 const propertiesOne = [
   {
@@ -267,7 +206,7 @@ const Listing = () => {
   };
 
   return (
-    <div className="Listing container section" id="group">
+    <div className="Listing section" id="group">
       <div className="secContainer">
         <div className="secHeader">
          
@@ -289,7 +228,7 @@ const Listing = () => {
           </p>
           <div data-aos="fade-up" className="btns flex">
         
-              <button className="btnn" style={{
+              <button className="btnn min-width-221 font-18" style={{
                 color: '#C9961A', // Text color
                 backgroundColor: 'white', // Button background color
                 border: '2px solid #C9961A',

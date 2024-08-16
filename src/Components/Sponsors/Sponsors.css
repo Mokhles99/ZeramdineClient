@@ -31,8 +31,7 @@
 
 .logo-slider {
   display: flex;
-  animation: scrollLogo 5s linear infinite;
-  width: 100%;
+  animation: scrollLogo 35s linear infinite;
 }
 
 @keyframes scrollLogo {

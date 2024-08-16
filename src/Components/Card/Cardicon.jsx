@@ -136,29 +136,69 @@ function CartIcon() {
         dispatch(updateItemQuantity(cartId, itemId, newQuantity));
     };
     
-    const handleDecreaseQuantity = (itemId) => {
+    // const handleDecreaseQuantity = (itemId) => {
+    //     const cartId = localStorage.getItem('cartId');
+    //     if (itemQuantities[itemId] > 1) {
+    //         const newQuantity = itemQuantities[itemId] - 1;
+    //         setItemQuantities({ ...itemQuantities, [itemId]: newQuantity });
+    //         dispatch(updateItemQuantity(cartId, itemId, newQuantity));
+    //     } else {
+    //         const newItems = { ...itemQuantities };
+    //         delete newItems[itemId];
+    //         setItemQuantities(newItems);
+    //         dispatch(removeItemFromCart(carttwo._id, itemId));
+    //     }
+    //     dispatch(getCarttwo(cartId));
+    // };
+
+
+    const handleDecreaseQuantity = async (itemId) => {
         const cartId = localStorage.getItem('cartId');
+    
         if (itemQuantities[itemId] > 1) {
             const newQuantity = itemQuantities[itemId] - 1;
             setItemQuantities({ ...itemQuantities, [itemId]: newQuantity });
-            dispatch(updateItemQuantity(cartId, itemId, newQuantity));
+            await dispatch(updateItemQuantity(cartId, itemId, newQuantity));
         } else {
             const newItems = { ...itemQuantities };
             delete newItems[itemId];
             setItemQuantities(newItems);
-            dispatch(removeItemFromCart(carttwo._id, itemId));
+            await dispatch(removeItemFromCart(carttwo._id, itemId));
         }
+    
+        // Fetch the updated cart after the operation
+        dispatch(getCarttwo(cartId));
     };
+    
+    // const handleRemoveItem = (itemId) => {
+    //     const cartId = localStorage.getItem('cartId');
+    //     dispatch(removeItemFromCart(carttwo._id, itemId));
+    //     setItemQuantities(prevQuantities => {
+    //         const newQuantities = { ...prevQuantities };
+    //         delete newQuantities[itemId];
+    //         return newQuantities;
+    //     });
+    //     dispatch(getCarttwo(cartId));
+       
+    // };
 
-    const handleRemoveItem = (itemId) => {
+    const handleRemoveItem = async (itemId) => {
         const cartId = localStorage.getItem('cartId');
-        dispatch(removeItemFromCart(carttwo._id, itemId));
+        
+        // Remove the item from the cart
+        await dispatch(removeItemFromCart(carttwo._id, itemId));
+        
+        // Update local state
         setItemQuantities(prevQuantities => {
             const newQuantities = { ...prevQuantities };
             delete newQuantities[itemId];
             return newQuantities;
         });
+    
+        // Fetch the updated cart
+        dispatch(getCarttwo(cartId));
     };
+    
 
     const getModalStyle = () => {
         const baseStyle = {

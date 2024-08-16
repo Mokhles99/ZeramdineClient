@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./About.css";
 
  //
@@ -11,21 +11,22 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Accordion = ({ title, desc, active, setActive }) => {
+  const [activeAccording, setActiveAccording] = useState(false);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
   return (
     <div
-    
+       onClick={() => activeAccording ? setActiveAccording(false) :  setActiveAccording(true)}
       className={
-        (active === title ? "activeAccordion" : "") + " singleAccordion"
+        (activeAccording ? "activeAccordion" : "") + " singleAccordion"
       }
     >
       <span
-        onClick={() => setActive(title)}
+        
         className={
-          (active === title ? "activeTitle" : "") + " accordionTitle" + " flex"
+          (activeAccording ? "activeTitle" : "") + " accordionTitle" + " flex"
         }
       >
         <span className="flex">
@@ -33,16 +34,17 @@ const Accordion = ({ title, desc, active, setActive }) => {
           <span className="titleText">{title}</span>
         </span>
         <span className="dropDownIcon">
-          {active === title ? (
-            <BiSolidDownArrow className="icon" />
+          {activeAccording ? (
+           
+            <BiSolidUpArrow className="icon"  />
           ) : (
-            <BiSolidUpArrow className="icon" />
+            <BiSolidDownArrow className="icon" />
           )}
         </span>
       </span>
       <p
      
-        className={(active === title ? "show" : "") + " description"}
+        className={(activeAccording ? "show" : "") + " description"}
       >
         {desc}
       </p>

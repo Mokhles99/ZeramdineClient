@@ -10,7 +10,7 @@ import image2 from '../../Assets/Plan de travail 1.png'
 import image1 from '../../Assets/PLAN122.png'
 
 import CartIcon from "../Card/Cardicon";
-// import image from "../../Assets/cogeb.png";
+
 
 const Navbar = () => {
   //function to show navbar
@@ -65,14 +65,14 @@ const Navbar = () => {
       <div className="logoDiv">
         {/* <SiTreehouse className="icon" /> */}
         <img src={image1} className="logonav"/>
-        {/* <span>Cogeb</span> */}
+       
       </div>
 
       <div className={menu}>
         <ul>
-          <li className="navList" onClick={scrollToHero}>Acceuil</li>
+          <li className="navList" onClick={scrollToHero}>Accueil</li>
           {/* <li className="navList">Services</li> */}
-          <li className="navList" onClick={scrollToGroup}>Catégorie</li>
+          <li className="navList" onClick={scrollToGroup}>Catégories</li>
           <li className="navList" onClick={scrollToAboutUs}>À Propos</li>
         </ul>
         {/* icon close navbar on small devices */}

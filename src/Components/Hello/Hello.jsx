@@ -50,7 +50,7 @@ const HeroSection = () => {
     Aos.init({ duration: 2000 });
 
     const timer = setTimeout(() => {
-      const sponsorsElement = document.getElementById("sponsor"); 
+      const sponsorsElement = document.getElementById("group"); 
       if (sponsorsElement) {
         sponsorsElement.scrollIntoView({ behavior: "smooth" });
       }
@@ -61,32 +61,33 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section" id="hero">
-      <div className="hero-container containerHR flex">
+      <div className="hero-container px-3">
         <div className="hero-text">
           <h1 data-aos="fade-up" className="curr">
-            <span style={{ fontFamily: "'Playfair Display', serif" }}>{text}</span>
-            <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="orange" />
+            {/* <span style={{ fontFamily: "'Playfair Display', serif" }}>{text}</span>
+            <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="orange" />   */}
+               SOCIÉTÉ ZÉRAMDINE DE QUINCAILLERIE : façonnez votre espace de rêve, où innovation et élégance se rencontrent pour transcender l'ordinaire.
           </h1>
           <span data-aos="fade-up" className="design"></span>
-          <p data-aos="fade-up">
+          {/* <p data-aos="fade-up">
             SOCIÉTÉ ZÉRAMDINE DE QUINCAILLERIE : façonnez votre espace de rêve, où innovation et élégance se rencontrent pour transcender l'ordinaire.
-          </p>
+          </p> */}
           <div data-aos="fade-up" className="hero-numbers flex">
             <div className="number-item">
               <span>
-                <AnimatedCounter end={110} duration={4.5} /> <blockquote>+</blockquote>
+                <AnimatedCounter end={110} duration={0} /> <blockquote>+</blockquote>
               </span>
               <small >Marques</small>
             </div>
             <div className="number-item">
             <span >
-                <AnimatedCounter end={2} duration={4.5} /> <blockquote>K+</blockquote>
+                <AnimatedCounter end={2} duration={0} /> <blockquote>K+</blockquote>
               </span>
               <small>Clients Heureux</small>
             </div>
             <div className="number-item">
             <span >
-                <AnimatedCounter end={1986} duration={5.5} /> <blockquote>+</blockquote>
+                <AnimatedCounter end={1986} duration={0} /> <blockquote>+</blockquote>
               </span>
               <small>Notre histoire</small>
             </div>

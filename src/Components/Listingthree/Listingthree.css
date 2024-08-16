@@ -31,8 +31,7 @@
   margin-bottom: 3rem;
   border-radius: 5px;
   font-size: medium;
-  height: 70.53px !important;
-  padding: 1.4rem !important;
+
   font-weight: 550;
 }
 
@@ -42,7 +41,7 @@
 
 .Listingthree .secContainerthree .secHeader .btns {
   margin-top: 1.5rem;
-  gap: 1rem;
+  gap: 8px;
   justify-content: center;
   flex-wrap: wrap; /* Ensure the buttons wrap on small screens */
   display: flex; /* Use flexbox for layout */
@@ -70,13 +69,26 @@
 .Listingthree .secContainerthree .secContentthree .singleListingthree {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items to the top */
-  height: 400px; /* Set a fixed height */
+  justify-content: space-between; /* Align items to the top */
+  height: 395px; /* Set a fixed height */
   border-radius: var(--borderRadius);
   padding: 6px;
-  gap: 0.5rem;
+
   overflow: hidden;
   box-shadow: 0 4px 8px var(--shadowColor);
+}
+@media screen and (min-width: 1021px) and (max-width: 1165px) {
+  .Listingthree .secContainerthree .secContentthree .singleListingthree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items to the top */
+    height: 416px; /* Set a fixed height */
+    border-radius: var(--borderRadius);
+    padding: 6px;
+
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--shadowColor);
+  }
 }
 
 .singleListingthree .imgDiv {
@@ -91,10 +103,16 @@
 }
 
 .Listingthree .secContainerthree .secContentthree .singleListingthree:hover {
-  box-shadow: 0 4px 8px rgba(184, 134, 11, 0.5), 0 6px 20px rgba(139, 69, 19, 0.5), 0 8px 25px rgba(203, 109, 81, 0.5);
+  box-shadow: 0 4px 8px rgba(184, 134, 11, 0.5),
+    0 6px 20px rgba(139, 69, 19, 0.5), 0 8px 25px rgba(203, 109, 81, 0.5);
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree:hover .imgDiv img {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree:hover
+  .imgDiv
+  img {
   scale: 1.1;
   transition: 0.3s ease-in-out;
 }
@@ -106,7 +124,12 @@
   overflow: hidden;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv img {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .imgDiv
+  img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -116,56 +139,105 @@
   padding: 0.5rem 0.5rem 0;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .price {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .price {
   font-size: var(--h3FontSize);
   display: block;
   font-weight: 600;
   padding: 0.5rem 0;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .price .digits {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .price
+  .digits {
   color: var(--primaryColorDark);
   opacity: 0.7;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .price .duration {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .price
+  .duration {
   font-weight: 500;
   color: var(--primaryColorDark);
   opacity: 0.7;
   font-display: var(--normalFontSize);
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .name {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .name {
   display: block;
   font-size: var(--h2FontSize);
   font-weight: 700;
-  border-bottom: 2px solid rgb(235, 238, 242); 
+  border-bottom: 2px solid rgb(235, 238, 242);
   padding-bottom: 1rem;
   color: var(--primaryColorDark);
 }
 
 .Listingthree .secContainerthree .secContentthree .singleListingthree .info p {
   color: var(--primaryColorDark);
-  opacity: 0.7;
+  opacity: 1;
   font-size: 0.9rem;
   line-height: 20px;
   padding-bottom: 1rem;
+  max-height: 60px;
+  overflow-y: auto;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .ammenities {
   padding: 1rem 0;
   gap: 1rem;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities .flex {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .ammenities
+  .flex {
   gap: 0.5rem;
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities .flex .icon {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .ammenities
+  .flex
+  .icon {
   color: var(--orangeColor);
 }
 
-.Listingthree .secContainerthree .secContentthree .singleListingthree .info .ammenities .flex blockquote {
+.Listingthree
+  .secContainerthree
+  .secContentthree
+  .singleListingthree
+  .info
+  .ammenities
+  .flex
+  blockquote {
   color: var(--blackColor);
   opacity: 0.6;
   font-weight: 500;
@@ -174,7 +246,7 @@
 .catalog-container {
   display: flex;
   align-items: center;
-  margin-left: 9rem;
+  justify-content: center;
   margin-bottom: 1rem;
   color: #1e3f71;
   font-weight: bold;
@@ -185,8 +257,8 @@
   margin-left: 0.5rem;
   font-size: 1.5rem;
 }
-@media screen and (max-width:425px) {
-  .Listingthree{
+@media screen and (max-width: 425px) {
+  .Listingthree {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
@@ -194,52 +266,50 @@
     display: flex;
     align-items: center !important;
     text-align: center;
-    transform: translateX(-50%) !important;
+
     color: #1e3f71;
     font-weight: bold;
     font-size: 1rem;
   }
-  
-  
-.secContentthree{
-  gap: 2rem;
+
+  .secContentthree {
+    gap: 2rem;
+  }
+
+  .btnn3 {
+    color: rgb(201, 150, 26);
+    background-color: white;
+    border: 2px solid rgb(201, 150, 26);
+    font-family: "Playfair Display", serif;
+
+    border-radius: 5px;
+    font-size: medium;
+
+    font-weight: 350;
+  }
 }
 
+.Listingthree .secContainerthree .secContentthree {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 1021px) {
+  .Listingthree .secContainerthree .secContentthree {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
 
-.btnn3 {
-  color: rgb(201, 150, 26);
-  background-color: white;
-  border: 2px solid rgb(201, 150, 26);
-  font-family: "Playfair Display", serif;
- 
-  border-radius: 5px;
-  font-size: medium;
-  height: 60.53px !important;
-  padding: 1rem !important;
-  font-weight: 350;
-}
-  
-.Listingthree .secContainerthree .secHeader .btns {
-  flex-direction: row;
-  gap:0.2rem !important;
-}
-}
-@media screen and (min-width: 480px) and  (max-width: 677px){
+@media screen and (max-width: 550px) {
   .Listingthree .secContainerthree .secContentthree {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
 }
 
-@media screen and (min-width: 678px){
+@media screen and (min-width: 1800px) {
   .Listingthree .secContainerthree .secContentthree {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .Listingthree .secContainerthree .secContentthree {
-    gap: 0.8rem;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -247,22 +317,30 @@
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
   .Listingthree .secContainerthree .secContentthree .singleListingthree {
-    height: auto;
+    height: 395px;
     width: 100%; /* Let the height adjust automatically */
   }
 
-  .Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv {
+  .Listingthree
+    .secContainerthree
+    .secContentthree
+    .singleListingthree
+    .imgDiv {
     height: 150px; /* Reduce the image height */
   }
 
-  .Listingthree .secContainerthree .secContentthree .singleListingthree .info p {
+  .Listingthree
+    .secContainerthree
+    .secContentthree
+    .singleListingthree
+    .info
+    p {
     font-size: 0.8rem; /* Reduce the font size */
     line-height: 1.2rem; /* Adjust the line height */
   }
 }
 @media screen and (max-width: 375px) {
-  
-  .Listingthree{
+  .Listingthree {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
@@ -270,48 +348,75 @@
     display: flex;
     align-items: center !important;
     text-align: center;
-    transform: translateX(-40%) !important;
+
     color: #1e3f71;
     font-weight: bold;
     font-size: 1rem;
   }
-
-  
 }
 /* Specific adjustments for devices with max-width: 320px */
 @media screen and (max-width: 320px) {
-
-  .Listingthree{
+  .Listingthree {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
   .Listingthree .secContainerthree .secHeader .btns {
     flex-direction: row;
-    gap:0.2rem !important;
   }
 
   .Listingthree .secContainerthree .secContentthree .singleListingthree {
-    height: auto;
+    height: 395px;
     width: 100%; /* Let the height adjust automatically */
     padding: 4px;
-    gap: 0.3rem;
   }
 
-  .Listingthree .secContainerthree .secContentthree .singleListingthree .imgDiv {
+  .Listingthree
+    .secContainerthree
+    .secContentthree
+    .singleListingthree
+    .imgDiv {
     height: 120px; /* Further reduce the image height */
   }
 
-  .Listingthree .secContainerthree .secContentthree .singleListingthree .info .name {
+  .Listingthree
+    .secContainerthree
+    .secContentthree
+    .singleListingthree
+    .info
+    .name {
     font-size: var(--h3FontSize);
   }
 
-  .Listingthree .secContainerthree .secContentthree .singleListingthree .info p {
+  .Listingthree
+    .secContainerthree
+    .secContentthree
+    .singleListingthree
+    .info
+    p {
     font-size: 0.7rem; /* Further reduce the font size */
     line-height: 1rem; /* Adjust the line height */
     padding-bottom: 0.5rem;
   }
 
-  .Listingthree .secContainerthree .secContentthree .singleListingthree .info .price {
+  .Listingthree
+    .secContainerthree
+    .secContentthree
+    .singleListingthree
+    .info
+    .price {
     font-size: 0.8rem;
   }
+}
+
+.btn-footer-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.eye-icon {
+  display: block;
+  padding-top: 7px;
+  padding-left: 8px;
 }

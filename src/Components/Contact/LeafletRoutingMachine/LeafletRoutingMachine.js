@@ -7,13 +7,8 @@ import {useMap } from "react-leaflet"
 const LeafletRoutingMachine = () => {
 
     const map = useMap ();
-    // let DefaultIcon=L.icon({
-    //     iconUrl:"../../../Assets/marche-a-pied-image-animee-0013.gif",
-    //     iconSize:[90,90],
-       
-    //   });
     useEffect (()=>{
-        var marker1 = L.marker([35.574385221373845,10.73509862446424]
+        var marker1 = L.marker([35.57472,10.73419]
             // ,
             // {icon:DefaultIcon }
             ).addTo(map);
@@ -22,7 +17,7 @@ const LeafletRoutingMachine = () => {
             L.marker([e.latlng.lat,e.latlng.lng])
              L.Routing.control({
             waypoints: [
-              L.latLng(35.574385221373845,10.73509862446424),
+              L.latLng(35.57472,10.73419),
               L.latLng(e.latlng.lat,e.latlng.lng)
             ],
             lineOptions:{
@@ -42,7 +37,7 @@ const LeafletRoutingMachine = () => {
             showAlternatives:true,
 
           }).on("routesfound",function(e){
-              console.log(e)
+            //   console.log(e)
                     e.routes[0].coordinates.forEach((c,i)=>{
                         setTimeout(()=>{
                             marker1.setLatlng([c.lat,c.lng])
