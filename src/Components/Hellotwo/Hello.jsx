@@ -76,11 +76,11 @@ const HelloTwo = () => {
               </div>
               <div className="statistics-bar-item">
                 <div className="statistics-bar-value">3500 +</div>
-                <div className="statistics-bar-label">Produit</div>
+                <div className="statistics-bar-label">Produits</div>
               </div>
               <div className="statistics-bar-item">
                 <div className="statistics-bar-value">200 +</div>
-                <div className="statistics-bar-label">Projet</div>
+                <div className="statistics-bar-label">Projets</div>
               </div>
             </div>
           </div>
