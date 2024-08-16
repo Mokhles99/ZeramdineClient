@@ -122,7 +122,7 @@
   color: var(--primaryColorDark);
 }
 .addBackground .menu ul li {
-  color: var(--primaryColorDark) !important;
+  color:#987214!important;
 }
 
 @media screen and (min-width: 768px) {
@@ -143,14 +143,14 @@
     text-align: center;
     cursor: pointer;
     /* color: rgb(0, 0, 0); */
-    color: aliceblue;
-    opacity: 0.7;
+    color: aliceblue ;
+   
     font-family:"'Playfair Display', serif";
   }
   .Navbar .menu ul li:hover {
-    color: var(--primaryColor);
+    color: rgb(201, 150, 26);
     opacity: 1;
-    border-bottom: 1.5px solid var(--primaryColor);
+    border-bottom: 1.5px solid rgb(201, 150, 26);
   }
 }
 @media screen and (min-width: 960px) {
