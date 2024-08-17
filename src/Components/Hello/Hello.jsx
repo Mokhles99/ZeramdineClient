@@ -64,6 +64,7 @@ const HeroSection = () => {
       <div className="hero-container px-3">
         <div className="hero-text">
           <h1 className="curr">
+            {/* Mokles commit  */}
             {/* <span style={{ fontFamily: "'Playfair Display', serif" }}>{text}</span>
             <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="orange" />   */}
                SOCIÉTÉ ZÉRAMDINE DE QUINCAILLERIE : Façonnez votre espace de rêve, où innovation et élégance se rencontrent pour transcender l'ordinaire .
