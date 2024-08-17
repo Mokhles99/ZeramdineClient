@@ -74,7 +74,7 @@ const ImageSwiper = () => {
     <div style={{ margin: '0 auto', maxWidth: '100%' , paddingTop:'5rem' ,paddingBottom:'10rem'}}>
 
     <div className="carousel-titles" style={{ textAlign: 'center', marginBottom: '5rem', marginTop:"5rem" }}>
-            <h2 style={{ fontSize: '1.5rem', color: 'rgb(201, 150, 26)', fontWeight: 'bold' ,paddingBottom:'2rem'}}>EXPLOREZ NOS PROJETS</h2>
+            <h2 style={{ fontSize: '1.5rem', color: 'rgb(201, 150, 26)' ,paddingBottom:'2rem' , fontFamily: "'Playfair Display', serif" ,   letterSpacing: '0.1em'  }}>EXPLOREZ NOS PROJETS</h2>
             <p style={{ fontSize: '1.5rem', color: 'gray' }}>Jetez un œil à nos projets récents</p>
           </div>
     <div className="image-swiper">

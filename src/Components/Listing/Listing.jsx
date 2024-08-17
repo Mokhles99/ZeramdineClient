@@ -210,7 +210,7 @@ const Listing = () => {
       <div className="secContainer">
         <div className="secHeader">
          
-          <h1 data-aos="fade-up"  style={{
+          <h1   style={{
               color: '#C9961A', 
               fontSize: '2rem', 
               marginBottom: '2rem', 
@@ -219,14 +219,14 @@ const Listing = () => {
               fontWeight: '500', 
               textTransform: 'uppercase', 
             }}>EXPLOREZ NOS CATÉGORIES</h1>
-          <h1 data-aos="fade-up" className="title" style={{letterSpacing: '0.2em',}}>
+          <h1  className="title" style={{letterSpacing: '0.2em',}}>
           Engagez-vous vers l'excellence avec SZQ 
             <span className="orangeDot"> .</span>
           </h1>
-          <p data-aos="fade-up" style={{fontFamily: "'Playfair Display', serif",marginBottom:'3rem'}}>
+          <p  style={{fontFamily: "'Playfair Display', serif",marginBottom:'3rem'}}>
             Satisfaire nos clients , Dépassez vos frontières .
           </p>
-          <div data-aos="fade-up" className="btns flex">
+          <div  className="btns flex">
         
               <button className="btnn min-width-221 font-18" style={{
                 color: '#C9961A', // Text color
@@ -247,7 +247,7 @@ const Listing = () => {
             <div
               key={property.id}
               className={`image-container ${selectedCatalog === property.catalog ? 'selected' : ''}`}
-              data-aos="fade-up"
+              
               onClick={() => handleCatalogClick(property.catalog, property.name)}
             >
               <img src={property.image} alt={property.name} className="property-image" />

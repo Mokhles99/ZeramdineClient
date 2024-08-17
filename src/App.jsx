@@ -28,7 +28,7 @@ function App() {
        <HelloTwo/>
        <ListingTwo/>
       <About/>
-      <Contact/>
+      {/* <Contact/> */}
       {/* <ImageCarousel/> */}
       <ImageSwiper/>
       <Subscribe/> 

@@ -17,12 +17,12 @@ const About = () => {
   return (
     <div className="About section container" id="about">
       <div className="secContainer flex">
-        <div data-aos="fade-up" className="imgDiv">
+        <div className="imgDiv">
           <img src={image} alt="Image À Propos" />
         </div>
 
         <div className="textDiv">
-          <div data-aos="fade-down" className="secHeader flex">
+          <div  className="secHeader flex">
             <div className="secTitle">
               <span className="orangeText" style={{color:" rgb(201, 150, 26)", fontFamily: "'Playfair Display', serif",fontSize:"1.7rem",marginBottom:"1rem"}}>NOS VALEURS</span>
               <h1 style={{fontFamily: "'Playfair Display', serif",fontSize:"2rem",marginBottom:"1rem"}}>
@@ -34,7 +34,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div data-aos="fade-down" className="accordion grid">
+          <div  className="accordion grid">
           <Accordion
         title="Expertise en produits de quincaillerie"
         desc="Notre société excelle dans la fourniture d'une large gamme de produits de quincaillerie de haute qualité. Nous nous assurons que chaque produit répond aux normes les plus strictes pour garantir la satisfaction de nos clients."

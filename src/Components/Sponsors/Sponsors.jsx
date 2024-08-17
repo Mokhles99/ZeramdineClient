@@ -63,7 +63,7 @@ import logo64 from '../../Assets/marques/64.jpg';
 import logo65 from '../../Assets/marques/65.jpg';
 import logo66 from '../../Assets/marques/66.jpg';
 import logo67 from '../../Assets/marques/67.jpg';
-
+import logo69 from '../../Assets/marques/69.jpg';
 import logo70 from '../../Assets/marques/70.jpg';
 import logo71 from '../../Assets/marques/71.jpg';
 import logo72 from '../../Assets/marques/72.jpg';
@@ -111,12 +111,12 @@ const Sponsors = () => {
 
   return (
     <div className="Sponsors" id="sponsor">
-      <div data-aos="fade-up" className="sponsor-title" style={{ textAlign: 'center' }}>
+      <div className="sponsor-title" style={{ textAlign: 'center' }}>
         <h2 style={{ color:'#c9c2c2', fontSize: '1.1rem',marginBottom:'3rem',letterSpacing: '0.4em' , fontFamily: "'Playfair Display', serif",}}>
           Nos marques
         </h2>
       </div>
-      <div data-aos="fade-up" className="secContainer flex">
+      <div className="secContainer flex">
         <div className="logo-slider">
           <span><img src={logo1} alt="Logo 1" /></span>
           <span><img src={logo2} alt="Logo 2" /></span>
@@ -144,6 +144,7 @@ const Sponsors = () => {
           <span><img src={logo24} alt="Logo 24" /></span>
         
           <span><img src={logo26} alt="Logo 26" /></span>
+          <span><img src={logo27} alt="Logo 27" /></span>
          
           <span><img src={logo28} alt="Logo 28" /></span>
           <span><img src={logo29} alt="Logo 29" /></span>
@@ -181,13 +182,13 @@ const Sponsors = () => {
           <span><img src={logo65} alt="Logo 65" /></span>
           <span><img src={logo66} alt="Logo 66" /></span>
           <span><img src={logo67} alt="Logo 67" /></span>
-          
+          <span><img src={logo69} alt="Logo 69" /></span>
          
           <span><img src={logo70} alt="Logo 70" /></span>
           <span><img src={logo71} alt="Logo 71" /></span>
           <span><img src={logo72} alt="Logo 72" /></span>
           <span><img src={logo73} alt="Logo 73" /></span>
-   
+          <span><img src={logo74} alt="Logo 73" /></span>
           <span><img src={logo75} alt="Logo 75" /></span>
           <span><img src={logo76} alt="Logo 76" /></span>
           <span><img src={logo77} alt="Logo 77" /></span>

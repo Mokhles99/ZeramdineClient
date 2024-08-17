@@ -1,0 +1,15 @@
+.textfield-root input {
+    color: #C9961A !important; /* Couleur du texte */
+  }
+  
+  .textfield-root .MuiInputLabel-root {
+    color: #72716d !important; /* Couleur du label (placeholder) */
+  }
+  
+  .textfield-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #C9961A !important; /* Couleur de la bordure au survol */
+  }
+  
+  .textfield-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #C9961A !important; /* Couleur de la bordure lorsqu'il est focalisé */
+  }

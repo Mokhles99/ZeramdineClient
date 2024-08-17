@@ -22,6 +22,22 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 10px;
 }
+/* Subscribe.css */
+.textfield-root input {
+  color: #C9961A !important; /* Couleur du texte */
+}
+
+.textfield-root .MuiInputLabel-root {
+  color: #72716d !important; /* Couleur du label (placeholder) */
+}
+
+.textfield-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #C9961A !important; /* Couleur de la bordure au survol */
+}
+
+.textfield-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #C9961A !important; /* Couleur de la bordure lorsqu'il est focalisé */
+}
 
 .Subscribe .secContent {
   background: linear-gradient(40deg, rgb(200, 200, 200), rgb(100, 100, 100));
@@ -47,7 +63,8 @@
 
 .Subscribe .secContent h1 {
   /* /* color: var(--whiteColor); */
-  color: rgb(233 170 16);
+  /* color: rgb(233 170 16); */
+  color:#C9961A;
 
   font-size: var(--h1FontSize);
 }

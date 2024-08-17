@@ -3,13 +3,14 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Modal, Box, Typography, TextField, Button, List, ListItem, ListItemText } from '@mui/material';
 import { updateCartWithUserInfo } from '../../actions/carttwo.actions';
-
+import '../Subscribe/Subscribe.css'; 
 function UserInfoModal({ open, onClose, userInfo, setUserInfo, cartItems }) {
   const dispatch = useDispatch();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const cartId = "ID_DU_PANIER";
+  
     await dispatch(updateCartWithUserInfo(cartId, userInfo));
     onClose();
   };
@@ -37,11 +38,53 @@ function UserInfoModal({ open, onClose, userInfo, setUserInfo, cartItems }) {
             </ListItem>
           </List>
         ))}
-        <TextField label="Nom" variant="outlined" name="name" value={userInfo.name} onChange={handleUserInfoChange} fullWidth />
-        <TextField label="Prénom" variant="outlined" name="surname" value={userInfo.surname} onChange={handleUserInfoChange} fullWidth />
-        <TextField label="Email" variant="outlined" name="email" value={userInfo.email} onChange={handleUserInfoChange} fullWidth />
-        <TextField label="Numéro de téléphone" variant="outlined" name="phoneNumber" value={userInfo.phoneNumber} onChange={handleUserInfoChange} fullWidth />
-        <TextField label="Message" variant="outlined" name="message" multiline rows={4} value={userInfo.message} onChange={handleUserInfoChange} fullWidth />
+        <TextField
+          label="Nom"
+          variant="outlined"
+          name="name"
+          value={userInfo.name}
+          onChange={handleUserInfoChange}
+          fullWidth
+          className="textfield-root" 
+        />
+        <TextField
+          label="Prénom"
+          variant="outlined"
+          name="surname"
+          value={userInfo.surname}
+          onChange={handleUserInfoChange}
+          fullWidth
+          className="textfield-root" 
+        />
+        <TextField
+          label="Email"
+          variant="outlined"
+          name="email"
+          value={userInfo.email}
+          onChange={handleUserInfoChange}
+          fullWidth
+          className="textfield-root" 
+        />
+        <TextField
+          label="Numéro de téléphone"
+          variant="outlined"
+          name="phoneNumber"
+          value={userInfo.phoneNumber}
+          onChange={handleUserInfoChange}
+          fullWidth
+          className="textfield-root" 
+        />
+        <TextField
+          label="Message"
+          variant="outlined"
+          name="message"
+          multiline
+          rows={4}
+          value={userInfo.message}
+          onChange={handleUserInfoChange}
+          fullWidth
+          className="textfield-root" 
+        />
         <Button type="submit" variant="contained" sx={{ mt: 2, bgcolor: 'primary.main' }}>Demande Devis</Button>
       </Box>
     </Modal>

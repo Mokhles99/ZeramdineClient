@@ -63,16 +63,16 @@ const HeroSection = () => {
     <div className="hero-section" id="hero">
       <div className="hero-container px-3">
         <div className="hero-text">
-          <h1 data-aos="fade-up" className="curr">
+          <h1 className="curr">
             {/* <span style={{ fontFamily: "'Playfair Display', serif" }}>{text}</span>
             <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="orange" />   */}
-               SOCIÉTÉ ZÉRAMDINE DE QUINCAILLERIE : façonnez votre espace de rêve, où innovation et élégance se rencontrent pour transcender l'ordinaire.
+               SOCIÉTÉ ZÉRAMDINE DE QUINCAILLERIE : Façonnez votre espace de rêve, où innovation et élégance se rencontrent pour transcender l'ordinaire .
           </h1>
-          <span data-aos="fade-up" className="design"></span>
+          <span className="design"></span>
           {/* <p data-aos="fade-up">
             SOCIÉTÉ ZÉRAMDINE DE QUINCAILLERIE : façonnez votre espace de rêve, où innovation et élégance se rencontrent pour transcender l'ordinaire.
           </p> */}
-          <div data-aos="fade-up" className="hero-numbers flex">
+          <div className="hero-numbers flex">
             <div className="number-item">
               <span>
                 <AnimatedCounter end={110} duration={0} /> <blockquote>+</blockquote>
@@ -93,7 +93,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="hero-image">
+        <div className="hero-image">
           <img src={ImageHero3} alt="Image Accueil"  className="hello-image" />
         </div>
       </div>

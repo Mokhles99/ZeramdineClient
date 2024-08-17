@@ -145,11 +145,11 @@ const Footer = () => {
   };
 
   const handleInstagramClick = () => {
-    window.location.href = 'https://www.instagram.com/'; 
+    window.location.href = 'https://www.instagram.com/zeramdinedequincaillerie?igsh=ZGt6d2J6dGZmNjhp'; 
   };
 
   const handleFacebookClick = () => {
-    window.location.href = 'https://www.facebook.com'; 
+    window.location.href = 'https://www.facebook.com/profile.php?id=61558570696297'; 
   };
 
   const scrollToHero = () => {
@@ -179,7 +179,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="Footer">
+    <div className="Footer" id="footer">
       <div className="secContainer container grid">
         <div className="logoDiv">
           <div className="footerLogo">
@@ -211,7 +211,7 @@ const Footer = () => {
         <div className="footerLinks">
           <span className="linkTitle">Détails de contact</span>
           <span className="phone">+216 56 924 849</span>
-          <span className="email">contact@szq.tn</span>
+          <span className="email">contactszq@gmail.com</span>
           <span className="website">www.szq.tn</span>
         </div>
       </div>

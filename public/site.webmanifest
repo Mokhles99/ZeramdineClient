@@ -1,11 +1,11 @@
 {
   "name": "SZQ",
-  "short_name": "",
+  "short_name": "SZQ",
   "start_url": "/",
   "icons": [
     {
       "src": "/favicon.ico",
-      "sizes": "any'",
+      "sizes": "32x32", 
       "type": "image/x-icon"
     },
     {
@@ -20,6 +20,6 @@
     }
   ],
   "theme_color": "#ffffff",
-  "background_color": "#fff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }

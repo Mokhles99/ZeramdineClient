@@ -176,9 +176,9 @@
   cursor:pointer;
   border-radius: 20px;
   /* filter: sepia(30%); */
-  box-shadow: 0 16px 20px rgba(184, 134, 11, 0.5),
+  /* box-shadow: 0 16px 20px rgba(184, 134, 11, 0.5),
   0 6px 20px rgba(139, 69, 19, 0.5), 
-  0 8px 25px rgba(203, 109, 81, 0.5); 
+  0 8px 25px rgba(203, 109, 81, 0.5);  */
 }
 
 .image-container.selected {
@@ -251,9 +251,9 @@
     cursor:pointer;
     border-radius: 20px;
     /* filter: sepia(30%); */
-    box-shadow: 0 16px 20px rgba(184, 134, 11, 0.5),
+    /* box-shadow: 0 16px 20px rgba(184, 134, 11, 0.5),
     0 6px 20px rgba(139, 69, 19, 0.5), 
-    0 8px 25px rgba(203, 109, 81, 0.5); 
+    0 8px 25px rgba(203, 109, 81, 0.5);  */
   }
   
   .image-container.selected {

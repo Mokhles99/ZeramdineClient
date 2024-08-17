@@ -54,7 +54,7 @@ const Contact = () => {
         </div>
 
         <div className="textDiv">
-          <div data-aos="fade-down" className="secHeader flex">
+          <div  className="secHeader flex">
             <div className="secTitle">
               <span className="orangeText" style={{color:'rgb(201, 150, 26)' , fontFamily:"'Playfair Display', serif",fontSize:'2rem'}}>Contactez-nous</span>
               <h1 style={{fontFamily:"'Playfair Display', serif",fontSize:'2rem'}}>
@@ -68,8 +68,8 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="secContent grid" data-aos="fade-right">
-            <div data-aos="fade-up" className="phone">
+          <div className="secContent grid" >
+            <div className="phone">
               <div className="info flex">
                 <BiSolidPhoneCall className="icon" />
                 <span>
@@ -79,7 +79,7 @@ const Contact = () => {
               </div>
               <button onClick={handlePhoneClick}>Appeler</button>
             </div>
-            <div data-aos="fade-up" className="chat">
+            <div className="chat">
               <div className="info flex">
                 <RiWhatsappFill className="icon" />
                 <span>
@@ -89,7 +89,7 @@ const Contact = () => {
               </div>
               <button onClick={handleWhatsAppClick}>Message</button>
             </div>
-            <div data-aos="fade-up" className="videoCall">
+            <div className="videoCall">
               <div className="info flex">
                 <FaFacebook className="icon" />
                 <span>
@@ -99,7 +99,7 @@ const Contact = () => {
               </div>
               <button onClick={handleFacebookClick}>Contacter</button>
             </div>
-            <div data-aos="fade-up" className="message">
+            <div className="message">
               <div className="info flex">
                 <AiFillInstagram className="icon" />
                 <span>

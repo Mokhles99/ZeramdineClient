@@ -78,10 +78,10 @@ const ListingTwo = () => {
           {properties.map(({ id, image, name, desc }) => {
             return (
               <div key={id} className="singleListingHR">
-                <div data-aos="fade-down" className="imgDiv">
+                <div  className="imgDiv">
                   <img src={image} />
                 </div>
-                <div data-aos="fade-up" className="info">
+                <div className="info">
                   <h2 className="name">{name}</h2>
                  
                   <p>{desc}</p>

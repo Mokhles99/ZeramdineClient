@@ -38,15 +38,34 @@ function CartIcon() {
         }
     }, [dispatch]);
 
+    // useEffect(() => {
+    //     if (carttwo && carttwo.items) {
+    //         const updatedQuantities = {};
+    //         carttwo.items.forEach(item => {
+    //             updatedQuantities[item._id] = item.quantity;
+    //         });
+    //         setItemQuantities(updatedQuantities);
+    //     }
+    // }, [carttwo.items]);
+
     useEffect(() => {
         if (carttwo && carttwo.items) {
             const updatedQuantities = {};
+            let quantitiesChanged = false;
+    
             carttwo.items.forEach(item => {
-                updatedQuantities[item._id] = item.quantity;
+                if (itemQuantities[item._id] !== item.quantity) {
+                    updatedQuantities[item._id] = item.quantity;
+                    quantitiesChanged = true;
+                }
             });
-            setItemQuantities(updatedQuantities);
+    
+            if (quantitiesChanged) {
+                setItemQuantities(updatedQuantities);
+            }
         }
     }, [carttwo.items]);
+    
 
     const handleOpenModal = () => {
         const cartId = localStorage.getItem('cartId');
@@ -84,7 +103,7 @@ function CartIcon() {
         } else if (!phoneRegex.test(userInfo.phoneNumber)) {
             newErrors.phoneNumber = 'Numéro de téléphone: il doit contenir 8 chiffres';
         }
-        if (!userInfo.message) newErrors.message = 'Message requis';
+         
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };

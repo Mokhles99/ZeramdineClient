@@ -194,7 +194,7 @@
 //     <div className="Listingthree containerNew" id="listing-three">
 //       <div className="secContainerthree">
 //         <div className="secHeader">
-//           <h1 data-aos="fade-up" style={{
+//           <h1 style={{
 //             color: '#C9961A', 
 //             fontSize: '2rem', 
 //             marginBottom: '2rem', 
@@ -205,21 +205,21 @@
 //           }}>
 //             Nos Produits
 //           </h1>
-//           <h1 data-aos="fade-up" className="title" style={{letterSpacing: '0.1em',}}>
+//           <h1 className="title" style={{letterSpacing: '0.1em',}}>
 //             Gamme de produits exclusifs
 //             <span className="orangeDot"> .</span>
 //           </h1>
-//           <p data-aos="fade-up" style={{marginBottom:'4rem', marginTop:'2rem'}}>
+//           <p style={{marginBottom:'4rem', marginTop:'2rem'}}>
 //             Découvrez nos produits exclusifs qui dépassent les frontières de l'excellence pour satisfaire vos exigences.
 //           </p>
 
 //           {catalogName && (
-//          <div data-aos="fade-up" class="catalog-container">
+//          <div class="catalog-container">
 //          <span>{catalogName}</span>
 //          <span class="catalog-icon">⬇️</span>
 //        </div>
 //           )}
-//           <div data-aos="fade-up" className="btns flex">
+//           <div className="btns flex">
 //             {catalogData[catalog].map((name, index) => (
 //               <button
 //                 key={index}
@@ -272,10 +272,10 @@
 //         <div className="secContentthree grid">
 //           {currentProducts.map((product) => (
 //             <div key={product._id} className="singleListingthree" >
-//               <div data-aos="fade-down" className="imgDiv">
+//               <div  className="imgDiv">
 //                 <img src={product.files[0]?.url} alt={product.name} onClick={() => handleProductClick(product)} />
 //               </div>
-//               <div data-aos="fade-up" className="info">
+//               <div className="info">
 //                 <h2 className="name">{product.name}</h2>
 //                 <p>{truncateDescription(product.description)}</p>
 //               </div>
@@ -560,7 +560,7 @@ const Listingthree = () => {
     <div className="Listingthree containerNew" id="listing-three">
       <div className="secContainerthree">
         <div className="secHeader">
-          <h1 data-aos="fade-up" style={{
+          <h1 style={{
             color: '#C9961A',
             fontSize: '2rem',
             marginBottom: '2rem',
@@ -571,21 +571,21 @@ const Listingthree = () => {
           }}>
             Nos Produits
           </h1>
-          <h1 data-aos="fade-up" className="title" style={{ letterSpacing: '0.1em', }}>
+          <h1 className="title" style={{ letterSpacing: '0.1em', }}>
             Gamme de produits exclusifs
             <span className="orangeDot"> .</span>
           </h1>
-          <p data-aos="fade-up" style={{ marginBottom: '4rem', marginTop: '2rem' }}>
+          <p style={{ marginBottom: '4rem', marginTop: '2rem' }}>
             Découvrez nos produits exclusifs qui dépassent les frontières de l'excellence pour satisfaire vos exigences.
           </p>
 
           {catalogName && (
-            <div data-aos="fade-up" className="catalog-container">
+            <div className="catalog-container">
               <span>{catalogName}</span>
               <span className="catalog-icon">⬇️</span>
             </div>
           )}
-          <div data-aos="fade-up" className="btns flex">
+          <div className="btns flex">
             {catalogData[catalog].map((name, index) => (
               <button
                 key={index}
@@ -638,10 +638,10 @@ const Listingthree = () => {
         <div className="secContentthree grid">
           {currentProducts.map((product) => (
             <div key={product._id} className="singleListingthree" >
-              <div data-aos="fade-down" className="imgDiv">
+              <div  className="imgDiv">
                 <img src={product.files[0]?.url} alt={product.name} onClick={() => handleProductClick(product)} />
               </div>
-              <div data-aos="fade-up" className="info">
+              <div className="info">
                 <h2 className="name">{product.name}</h2>
                 <p>{truncateDescription(product.description, product)}</p>
               </div>

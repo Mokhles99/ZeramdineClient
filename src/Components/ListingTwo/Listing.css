@@ -10,7 +10,7 @@
   --blackColor: hsl(0, 0%, 18%);
   --blackColorLight: hsl(233, 3%, 51%);
   --shadowColor: hsl(216, 2%, 58%);
-  --shadowColorTwo: hsla(242, 76%, 40%, 0.755);
+  --shadowColorTwo: rgba(184, 135, 11, 0.295);
   --inputColor: hsl(330, 12%, 97%);
   --cardColor: hsl(300, 3%, 94%);
   --orangeColor: hsl(25, 84%, 53%);

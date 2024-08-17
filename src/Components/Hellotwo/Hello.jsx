@@ -44,9 +44,9 @@ const HelloTwo = () => {
     <div className="HelloTwo">
       <div className="secContainerTwo containerHRR flex">
         <div className="textDiv">
-          <h1 data-aos="fade-up"> <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "3.5rem" }}>Pourquoi nous choisir ?</span></h1>
-          <span data-aos="fade-up" className="design"></span>
-          <p data-aos="fade-up" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem" }}>
+          <h1 > <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "3.5rem" }}>Pourquoi nous choisir ?</span></h1>
+          <span className="design"></span>
+          <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem" , textAlign:"justify" }}>
             Depuis <span style={{ color: 'rgb(201, 150, 26)', fontWeight: 'bold' }}>1986</span>, nous nous engageons à fournir à notre communauté les outils et les
             fournitures dont elle a besoin pour réaliser ses projets, grands ou petits. Notre
             histoire commence il y a plus de trois décennies, lorsque <span style={{ color: 'rgb(201, 150, 26)', fontWeight: 'bold' }}>LHAJ KHEMAÏES</span> a ouvert
@@ -58,7 +58,7 @@ const HelloTwo = () => {
             mener à bien vos projets ... <span style={{ color: "rgb(201, 150, 26)", textDecoration: "underline", cursor: 'pointer' }} onClick={handleOpenModal} >VOIR PLUS</span>
           </p>
 
-          <div data-aos="fade-up" className="statistics-bar-container">
+          <div className="statistics-bar-container">
             <div className="statistics-bar-title">Découvrez notre histoire . </div>
           
             <div className="statistics-bar-stats">
@@ -85,7 +85,7 @@ const HelloTwo = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="imgDiv">
+        <div className="imgDiv">
           <img src={ImageHero3} alt="Image Accueil" />
         </div>
 

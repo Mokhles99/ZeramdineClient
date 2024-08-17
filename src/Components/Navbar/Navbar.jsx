@@ -37,7 +37,7 @@ const Navbar = () => {
   window.addEventListener("scroll", addBG);
 
   const scrollToContact = () => {
-    const contactElement = document.getElementById("contact");
+    const contactElement = document.getElementById("footer");
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
