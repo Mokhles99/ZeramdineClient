@@ -1,3 +1,4 @@
+
 // import React, { useEffect, useContext, useState } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import "./Listingthree.css";
@@ -67,16 +68,7 @@
 //       titleStyle: { ...titleStyle, fontSize: '0.7rem' },
 //       textStyle: { ...textStyle, fontSize: '0.8rem' },
 //     };
-//   }
-//   //  else if (width >= 426) {
-//   //   return {
-//   //     ...baseStyle,
-//   //     width: '85%',
-//   //     flexDirection: 'column', // Stack image and text vertically
-//   //     titleStyle: { ...titleStyle, fontSize: '1.1rem' },
-//   //   };
-//   // }
-//    else {
+//   } else {
 //     return {
 //       ...baseStyle,
 //       width: '70%',
@@ -170,13 +162,13 @@
 //     setCurrentPage(value);
 //   };
 
-//   const truncateDescription = (description , product) => {
+//   const truncateDescription = (description, product) => {
 //     const maxLength = 120;
 //     if (description.length > maxLength) {
 //       return (
 //         <>
 //           {description.slice(0, maxLength)}
-//           <span style={{ color: 'rgb(201, 150, 26)' , cursor:"pointer" }}  onClick={() => handleProductClick(product)}>..... Voir plus</span>
+//           <span style={{ color: 'rgb(201, 150, 26)', cursor: "pointer" }} onClick={() => handleProductClick(product)}>..... Voir plus</span>
 //         </>
 //       );
 //     }
@@ -188,36 +180,36 @@
 //   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
 //   const modalStyle = getModalStyle();
-//   const { titleStyle, flexDirection ,textStyle } = modalStyle;
+//   const { titleStyle, flexDirection, textStyle } = modalStyle;
 
 //   return (
 //     <div className="Listingthree containerNew" id="listing-three">
 //       <div className="secContainerthree">
 //         <div className="secHeader">
 //           <h1 style={{
-//             color: '#C9961A', 
-//             fontSize: '2rem', 
-//             marginBottom: '2rem', 
-//             letterSpacing: '0.2em', 
-//             fontFamily: "'Playfair Display', serif", 
-//             fontWeight: '500', 
-//             textTransform: 'uppercase', 
+//             color: '#C9961A',
+//             fontSize: '2rem',
+//             marginBottom: '2rem',
+//             letterSpacing: '0.2em',
+//             fontFamily: "'Playfair Display', serif",
+//             fontWeight: '500',
+//             textTransform: 'uppercase',
 //           }}>
 //             Nos Produits
 //           </h1>
-//           <h1 className="title" style={{letterSpacing: '0.1em',}}>
+//           <h1 className="title" style={{ letterSpacing: '0.1em', }}>
 //             Gamme de produits exclusifs
 //             <span className="orangeDot"> .</span>
 //           </h1>
-//           <p style={{marginBottom:'4rem', marginTop:'2rem'}}>
+//           <p style={{ marginBottom: '4rem', marginTop: '2rem' }}>
 //             Découvrez nos produits exclusifs qui dépassent les frontières de l'excellence pour satisfaire vos exigences.
 //           </p>
 
 //           {catalogName && (
-//          <div class="catalog-container">
-//          <span>{catalogName}</span>
-//          <span class="catalog-icon">⬇️</span>
-//        </div>
+//             <div className="catalog-container">
+//               <span>{catalogName}</span>
+//               <span className="catalog-icon">⬇️</span>
+//             </div>
 //           )}
 //           <div className="btns flex">
 //             {catalogData[catalog].map((name, index) => (
@@ -226,14 +218,14 @@
 //                 className="btnn3"
 //                 onClick={() => handleTypeClick(name)}
 //                 style={{
-//                   color: selectedType === name ? 'white' : '#C9961A', 
-//                   backgroundColor: selectedType === name ? '#C9961A' : 'white', 
+//                   color: selectedType === name ? 'white' : '#C9961A',
+//                   backgroundColor: selectedType === name ? '#C9961A' : 'white',
 //                   border: '2px solid #C9961A',
 //                   fontFamily: "'Playfair Display', serif",
-//                   marginBottom: '0px', 
+//                   marginBottom: '0px',
 //                   padding: "10px 5px",
-//                   minWidth : "104px",
-//                   cursor: 'pointer', 
+//                   minWidth: "104px",
+//                   cursor: 'pointer',
 //                 }}
 //               >
 //                 {name}
@@ -277,57 +269,57 @@
 //               </div>
 //               <div className="info">
 //                 <h2 className="name">{product.name}</h2>
-//                 <p>{truncateDescription(product.description)}</p>
+//                 <p>{truncateDescription(product.description, product)}</p>
 //               </div>
 //               <div className="btn-footer-card">
-//               <button
-//                 className="plusButton"
-//                 onClick={() => handleProductClick(product)}
-//                 style={{
-//                   color: '#C9961A',
-//                   background: "rgb(205 198 198 / 0%)",
-//                   border: '1px solid #C9961A', 
-//                   borderRadius: '15px',
-//                   width: '45%',
-//                   fontFamily: "'Playfair Display', serif",
-//                   alignItems: 'center', 
-//                   marginBottom: '1rem',
-//                   padding: '0.3rem',
-//                   display:"flex",
-//                   cursor: 'pointer',
-//                   justifyContent: "center"
-//                 }}
-//               >
-//              <span>Voir détails</span>    <span className="eye-icon"><MdOutlineVisibility  /></span> 
-//               </button>
-//               <button
-//                 className="plusButton"
-//                 onClick={() => handleAddToCart(product._id)}
-//                 style={{
-//                   color: '#C9961A',
-//                   background: "rgb(205 198 198 / 56%)",
-//                   border: '1px solid #C9961A', 
-//                   borderRadius: '15px',
-//                   width: '45%',
-//                   fontFamily: "'Playfair Display', serif",
-//                   alignItems: 'center', 
-//                   marginBottom: '1rem',
-//                   padding: '0.3rem',
-//                   cursor: 'pointer',
-//                   display:"flex",
-           
-//                   justifyContent: "center"
-//                 }}
-//               >
-                 
-//                 <span>Ajouter au</span>    <span className="eye-icon"><MdOutlineShoppingCart /></span> 
-//               </button>
+//                 <button
+//                   className="plusButton"
+//                   onClick={() => handleProductClick(product)}
+//                   style={{
+//                     color: '#C9961A',
+//                     background: "rgb(205 198 198 / 0%)",
+//                     border: '1px solid #C9961A',
+//                     borderRadius: '15px',
+//                     width: '45%',
+//                     fontFamily: "'Playfair Display', serif",
+//                     alignItems: 'center',
+//                     marginBottom: '1rem',
+//                     padding: '0.3rem',
+//                     display: "flex",
+//                     cursor: 'pointer',
+//                     justifyContent: "center"
+//                   }}
+//                 >
+//                   <span>Voir détails</span> <span className="eye-icon"><MdOutlineVisibility /></span>
+//                 </button>
+//                 <button
+//                   className="plusButton"
+//                   onClick={() => handleAddToCart(product._id)}
+//                   style={{
+//                     color: '#C9961A',
+//                     background: "rgb(205 198 198 / 56%)",
+//                     border: '1px solid #C9961A',
+//                     borderRadius: '15px',
+//                     width: '45%',
+//                     fontFamily: "'Playfair Display', serif",
+//                     alignItems: 'center',
+//                     marginBottom: '1rem',
+//                     padding: '0.3rem',
+//                     cursor: 'pointer',
+//                     display: "flex",
+
+//                     justifyContent: "center"
+//                   }}
+//                 >
+
+//                   <span>Ajouter au</span> <span className="eye-icon"><MdOutlineShoppingCart /></span>
+//                 </button>
 //               </div>
-            
+
 //             </div>
 //           ))}
 //         </div>
-        
+
 //         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
 //           <Pagination
 //             count={Math.ceil(filteredProducts.length / productsPerPage)}
@@ -359,7 +351,7 @@
 //                   <h2 id="modal-modal-title" style={titleStyle}>
 //                     Produit: <span style={{ color: 'white' }}>{selectedProduct.name}</span>
 //                   </h2>
-//                   <p id="modal-modal-description" style={{textStyle,color:'white'}}>
+//                   <p id="modal-modal-description" style={{ textStyle, color: 'white' }}>
 //                     Détails: <span>{selectedProduct.description}</span>
 //                   </p>
 //                 </div>
@@ -385,7 +377,7 @@ import "aos/dist/aos.css";
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import { FaSearch } from "react-icons/fa";
-import Pagination from '@mui/material/Pagination'; // Importer le composant Pagination de Material-UI
+import Pagination from '@mui/material/Pagination';
 
 const manuel = ["Tournevis", "Marteaux", "Pinces", "Clés", "Scies", "Mesures"];
 const electriq = ["Interrupteurs", "Prises de courant", "Câbles électriques", "Lampes et luminaires", "Disjoncteur", "Boîtes de jonction"];
@@ -464,7 +456,6 @@ const Listingthree = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const cart = useSelector(state => state.carttwo.carttwo);
   const productsPerPage = 12;
 
   useEffect(() => {
@@ -476,7 +467,7 @@ const Listingthree = () => {
   }, []);
 
   useEffect(() => {
-    if (catalog && mokles) {
+    if (catalog && catalogData[catalog] && mokles) {
       const filtered = mokles.filter(product => catalogData[catalog].includes(product.type));
       setFilteredProducts(filtered);
     }
@@ -586,7 +577,7 @@ const Listingthree = () => {
             </div>
           )}
           <div className="btns flex">
-            {catalogData[catalog].map((name, index) => (
+            {catalog && catalogData[catalog] && catalogData[catalog].map((name, index) => (
               <button
                 key={index}
                 className="btnn3"
@@ -638,7 +629,7 @@ const Listingthree = () => {
         <div className="secContentthree grid">
           {currentProducts.map((product) => (
             <div key={product._id} className="singleListingthree" >
-              <div  className="imgDiv">
+              <div className="imgDiv">
                 <img src={product.files[0]?.url} alt={product.name} onClick={() => handleProductClick(product)} />
               </div>
               <div className="info">

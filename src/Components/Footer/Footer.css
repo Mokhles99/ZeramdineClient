@@ -114,18 +114,18 @@
     align-items: flex-start;
     text-align: start;
   }
-  .Footer .secContainer .footerLinks {
+  /* .Footer .secContainer .footerLinks {
     justify-content: center;
-  }
+  } */
 }
 @media screen and (min-width: 640px) {
   .Footer .secContainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 960px) {
   .Footer .secContainer {
-    padding: 2rem 0;
+    padding:2rem 0;
     grid-template-columns: repeat(4, 1fr);
   }
   .Footer .secContainer .footerLinks {

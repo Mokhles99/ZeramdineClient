@@ -211,7 +211,7 @@ const Footer = () => {
         <div className="footerLinks">
           <span className="linkTitle">Détails de contact</span>
           <span className="phone">+216 56 924 849</span>
-          <span className="email">contactszq@gmail.com</span>
+          <span className="email">contact@szq.tn</span>
           <span className="website">www.szq.tn</span>
         </div>
       </div>
